@@ -1,4167 +1,510 @@
--- This file was generated at discord.gg/syncrypt
 
-local n1
-
-repeat
-	local unpack_ = unpack or table.unpack
-
-	game:IsLoaded()
-
-	local t1 = {}
-
-	repeat
-		task.wait()
-		t1.value3 = game:IsLoaded()
-	until t1.value3
-
-	t1.value3 = game:GetService("Players")
-
-	local t2 = {
-		value1 = t1.value3
-	}
-
-	t1.value3 = t2.value1.LocalPlayer
-	t2.value2 = t1.value3
-	game:GetService("TweenService")
-
-	local now = os.clock()
-	local value2 = t2.value2
-
-	if value2 then
-		t1.value1 = t2.value2.Character
-		value2 = t1.value1
-
-		if t1.value1 then
-			t1.value2 = t2.value2.Character:FindFirstChild("Head")
-			t1.value1 = t1.value2
-
-			if not t1.value2 then
-				t1.value1 = t2.value2.Character:FindFirstChild("HumanoidRootPart")
-			end
-
-			value2 = t1.value1
-		end
-	end
-
-	if not value2 then
-		local _ = os.clock() - now > 10
-	end
-
-	while true do
-		task.wait(0.5)
-
-		local value22 = t2.value2
-
-		if value22 then
-			t1.value1 = t2.value2.Character
-			value22 = t1.value1
-
-			if t1.value1 then
-				t1.value2 = t2.value2.Character:FindFirstChild("Head")
-				t1.value1 = t1.value2
-
-				if not t1.value2 then
-					t1.value1 = t2.value2.Character:FindFirstChild("HumanoidRootPart")
-				end
-
-				value22 = t1.value1
-			end
-		end
-
-		t1.value3 = value22
-
-		if not value22 then
-			t1.value3 = os.clock() - now > 10
-		end
-
-		if t1.value3 then
-			break
-		else
-			continue
-		end
-	end
-
-	if n1 then
-		break
-	end
-
-	t2.value3 = game:GetService("ReplicatedStorage")
-	game:GetService("RunService")
-	t2.value4 = game:GetService("TeleportService")
-	t2.value5 = game:GetService("GuiService")
-	t2.value6 = game:GetService("HttpService")
-	t1.value1 = game:GetService("VirtualInputManager")
-	t2.value7 = t2.value2:WaitForChild("PlayerGui")
-
-	local Remotes = t2.value3:WaitForChild("Assets"):WaitForChild("Remotes")
-
-	t2.value8 = Remotes:WaitForChild("GET")
-	t2.value9 = Remotes:WaitForChild("POST")
-
-	local Interface = t2.value7:WaitForChild("Interface")
-	local Customisation = Interface:FindFirstChild("Customisation")
-
-	if Customisation then
-		Customisation = Customisation:FindFirstChild("Family")
-	end
-
-	t2.value10 = Customisation
-
-	local value10 = t2.value10
-
-	if value10 then
-		t1.value4 = t2.value10:FindFirstChild("Buttons_2")
-		value10 = t1.value4
-
-		if t1.value4 then
-			value10 = t2.value10.Buttons_2:FindFirstChild("Roll")
-		end
-	end
-
-	t2.value11 = value10
-	t2.value12 = t1.value1
-	t2.value13 = Interface
-	t2.value14 = Vector3.new(0, 0, 0)
-	t2.value15 = 14916516914
-	t2.value16 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Nebula-Softworks/Luna-Interface-Suite/refs/heads/master/source.lua", true))()
-
-	local value16 = t2.value16
-	local t3 = {
-		Name = "Astra Hub",
-		Subtitle = "AOT:R • By Lucid & Sudais",
-		LogoID = "99825557152439",
-		LoadingEnabled = true,
-		LoadingTitle = "Astra Hub",
-		LoadingSubtitle = "Loading",
-		ConfigSettings = {
-			RootFolder = nil,
-			ConfigFolder = "AstraHub_Luna"
-		},
-		Theme = {
-			Background = Color3.fromRGB(15, 15, 15),
-			Topbar = Color3.fromRGB(10, 10, 10),
-			Shadow = Color3.fromRGB(0, 0, 0),
-			Notification = Color3.fromRGB(20, 20, 20),
-			Border = Color3.fromRGB(60, 60, 60),
-			Page = Color3.fromRGB(18, 18, 18),
-			Title = Color3.fromRGB(255, 255, 255),
-			SubTitle = Color3.fromRGB(180, 180, 180),
-			Text = Color3.fromRGB(230, 230, 230),
-			DisabledText = Color3.fromRGB(100, 100, 100),
-			SelectedText = Color3.fromRGB(255, 255, 255),
-			Tab = Color3.fromRGB(28, 28, 28),
-			ActiveTab = Color3.fromRGB(50, 50, 50),
-			Toggle = Color3.fromRGB(200, 200, 200),
-			Slider = Color3.fromRGB(200, 200, 200),
-			Input = Color3.fromRGB(30, 30, 30),
-			Section = Color3.fromRGB(40, 40, 40),
-			Button = Color3.fromRGB(40, 40, 40),
-			ButtonText = Color3.fromRGB(220, 220, 220)
-		},
-		KeySystem = false,
-		KeySettings = {
-			Title = "Astra Hub",
-			Subtitle = "Key System",
-			Note = "Key is in discord",
-			FileName = "AstraHubKey",
-			SaveKey = true,
-			Key = { "astraisgoatedfrlol" },
-			SecondAction = {
-				Enabled = true,
-				Type = "Discord",
-				Parameter = "astrahub"
-			}
-		}
-	}
-	local v15 = value16.CreateWindow(value16, t3)
-
-	function t2.value17(p1)
-		if type(p1) == "table" then
-			return p1[1]
-		else
-			return p1
-		end
-	end
-
-	t2.value18 = nil
-	t2.value19 = nil
-	t2.value20 = 0
-
-	local now2 = os.clock()
-
-	t2.value21 = game.PlaceId == t2.value15
-
-	local function v17()
-		local value19
-
-		if os.clock() - t2.value20 < 0.5 then
-			value19 = t2.value19
-		else
-			value19 = false
-		end
-
-		if value19 then
-			return t2.value19
-		else
-			t2.value19 = t2.value8:InvokeServer("Functions", "Settings", "Get")
-			os.clock()
-
-			return t2.value19
-		end
-	end
-
-	if not t2.value21 then
-		if t2.value18 == nil then
-			local _ = os.clock() - now2 > 15
-		end
-
-		while true do
-			task.wait(1)
-			pcall(function()
-				t2.value18 = t2.value8:InvokeServer("Data", "Copy")
-			end)
-
-			if not t2.value18 then
-				v17()
-			end
-
-			if t2.value18 ~= nil or os.clock() - now2 > 15 then
-				n1 = 1
-
-				break
-			else
-				continue
-			end
-		end
-
-		if n1 then
-			break
-		end
-	end
-
-	n1 = 1
-
-	break
-until true
-
-while n1 do
-	if n1 == 1 then
-		n1 = nil
-
-		repeat
-			local value18 = v_u_4.value18
-
-			if value18 then
-				value18 = v_u_4.value18.Map
-
-				if value18 then
-					value18 = v_u_4.value18.Map.Type == "Raids"
-				end
-			end
-
-			if value18 then
-				workspace:GetAttribute("Finalised")
-
-				repeat
-					task.wait()
-					v3.value5 = workspace:GetAttribute("Finalised")
-				until v3.value5
-			end
-
-			v3.value5 = {
-				"Rare",
-				"Epic",
-				"Legendary",
-				"Mythical"
-			}
-			v_u_4.value22 = {}
-
-			local function v21()
-				if workspace:GetAttribute("Type") then
-					return true
-				end
-
-				local function v22()
-					v_u_4.value18 = v_u_4.value8:InvokeServer("Data", "Copy")
-				end
-
-				pcall(v22)
-
-				local v23 = v_u_4.value18 ~= nil
-
-				if not v23 then
-					return v23
-				end
-
-				v23 = v_u_4.value18.Map ~= nil
-
-				if not v23 then
-					return v23
-				end
-
-				v23 = v_u_4.value18.Slots ~= nil
-
-				return v23
-			end
-
-			for k, v in pairs({
-				Legendary = {
-					"Peerless Commander",
-					"Indefatigable",
-					"Tyrant\'s Stare",
-					"Invincible",
-					"Eviscerate",
-					"Font of Vitality",
-					"Flame Rhapsody",
-					"Robust",
-					"Sixth Sense",
-					"Gear Master",
-					"Carnifex",
-					"Munitions Master",
-					"Sanctified",
-					"Wind Rhapsody",
-					"Peerless Constitution",
-					"Exhumation",
-					"Warchief",
-					"Peerless Focus",
-					"Perfect Form",
-					"Courage Catalyst",
-					"Aegis",
-					"Unparalleled Strength",
-					"Perfect Soul"
-				},
-				Common = {
-					"Cripple",
-					"Lucky",
-					"Enhanced Metabolism",
-					"First Aid",
-					"Mighty",
-					"Fortitude",
-					"Hollow",
-					"Gear Beginner",
-					"Enduring"
-				},
-				Epic = {
-					"Munitions Expert",
-					"Gear Expert",
-					"Butcher",
-					"Resilient",
-					"Speedy",
-					"Reckless Abandon",
-					"Focus",
-					"Stalwart Durability",
-					"Adrenaline",
-					"Safeguard",
-					"Warrior",
-					"Solo",
-					"Mutilate",
-					"Trauma Battery",
-					"Hardy",
-					"Unbreakable",
-					"Siphoning",
-					"Flawed Release",
-					"Luminous",
-					"Peerless Strength"
-				},
-				Rare = {
-					"Blessed",
-					"Gear Intermediate",
-					"Unyielding",
-					"Fully Stocked",
-					"Forceful",
-					"Lightweight",
-					"Protection",
-					"Mangle",
-					"Experimental Shells",
-					"Critical Hunter",
-					"Tough",
-					"Heightened Vitality"
-				},
-				Secret = {
-					"Everlasting Flame",
-					"Heavenly Restriction",
-					"Adaptation",
-					"Maximum Firepower",
-					"Soulfeed",
-					"Kengo",
-					"Black Flash",
-					"Font of Inspiration",
-					"Explosive Fortune",
-					"Immortal",
-					"Art of War",
-					"Tatsujin",
-					"Founder\'s Blessing",
-					"Unwavering Belief"
-				}
-			}) do
-				for _, v2 in pairs(v) do
-					v_u_4.value22[v2] = k
-				end
-			end
-
-			v_u_4.value23 = {
-				Common = 100,
-				Rare = 250,
-				Epic = 625,
-				Legendary = 2500,
-				Secret = 10000
-			}
-			v_u_4.value24 = "AstraHub/aotr"
-			v_u_4.value25 = v_u_4.value24 .. "/configs"
-			v_u_4.value26 = v_u_4.value24 .. "/autoload.txt"
-			v_u_4.value27 = v_u_4.value24 .. "/return_counter.txt"
-			v_u_4.value28 = v_u_4.value24 .. "/autoexec.txt"
-			v_u_4.value29 = v_u_4.value24 .. "/autoexec_on.txt"
-			v_u_4.value30 = v_u_4.value24 .. "/ae_job.txt"
-			v_u_4.value31 = { "autoexec", "autoexecute" }
-
-			if not isfolder("AstraHub") then
-				makefolder("AstraHub")
-			end
-
-			if not isfolder(v_u_4.value24) then
-				makefolder(v_u_4.value24)
-			end
-
-			if not isfolder(v_u_4.value25) then
-				makefolder(v_u_4.value25)
-			end
-
-			if not isfile(v_u_4.value27) then
-				writefile(v_u_4.value27, "0")
-			end
-
-			function v_u_4.value32()
-				local syn_ = syn
-
-				if syn_ then
-					syn_ = syn.queue_on_teleport
-				end
-
-				if syn_ then
-					return syn_
-				end
-
-				syn_ = queue_on_teleport
-
-				if syn_ then
-					return syn_
-				end
-
-				syn_ = queueonteleport
-
-				if syn_ then
-					return syn_
-				end
-
-				syn_ = fluxus
-
-				if not syn_ then
-					return syn_
-				end
-
-				syn_ = fluxus.queue_on_teleport
-
-				return syn_
-			end
-			function v_u_4.value33(p2)
-				local value30 = v_u_4.value30
-				local t4 = { string.format("%q", p2) }
-
-				return ("task.spawn(function()\n    pcall(function()\n        repeat task.wait() until game:IsLoaded()\n        local jid = tostring(game.JobId)\n        local guard = %q\n        if isfile and isfile(guard) and readfile(guard) == jid then return end\n        pcall(function() writefile(guard, jid) end)\n        local Players = game:GetService(\"Players\")\n        local t0 = os.clock()\n        repeat task.wait() until Players.LocalPlayer or (os.clock() - t0) > 20\n        local plr = Players.LocalPlayer\n        if plr then\n            local c0 = os.clock()\n            repeat task.wait(0.2) until (plr.Character and (plr.Character:FindFirstChild(\"HumanoidRootPart\") or plr.Character:FindFirstChild(\"Head\"))) or (os.clock() - c0) > 25\n        end\n        task.wait(3)\n        local fn = loadstring(%s)\n        if fn then fn() end\n    end)\nend)\n").format(nil, value30, v_u_2(t4))
-			end
-
-			local function v31()
-				local v32 = isfile(v_u_4.value29)
-
-				if v32 then
-					v32 = readfile(v_u_4.value29) == "1"
-				end
-
-				if not v32 then
-					return
-				end
-
-				local v33 = isfile(v_u_4.value28) and readfile(v_u_4.value28) or ""
-
-				if v33 == "" then
-					return
-				end
-
-				local v34 = v_u_4.value33(v33)
-
-				for _, v in ipairs(v_u_4.value31) do
-					pcall(function()
-						local isfolder_ = isfolder
-
-						if isfolder_ then
-							isfolder_ = not isfolder(v)
-						end
-
-						if not isfolder_ then
-							writefile(v .. "/AstraHub_AutoExec.lua", v34)
-
-							return
-						end
-
-						pcall(makefolder, v)
-						writefile(v .. "/AstraHub_AutoExec.lua", v34)
-					end)
-				end
-
-				pcall(function()
-					local writefile_ = writefile
-					local value30 = v_u_4.value30
-					local JobId = game.JobId
-
-					writefile_(value30, (tostring(JobId)))
-				end)
-
-				local v41 = v_u_4.value32()
-
-				if not v41 then
-					return
-				end
-
-				pcall(v41, v34)
-			end
-
-			function v_u_4.value34()
-				local function v42()
-					writefile(v_u_4.value29, "0")
-				end
-
-				pcall(v42)
-
-				for _, v in ipairs(v_u_4.value31) do
-					pcall(function()
-						if not isfile(v .. "/AstraHub_AutoExec.lua") then
-							return
-						end
-
-						delfile(v .. "/AstraHub_AutoExec.lua")
-					end)
-				end
-			end
-
-			getgenv().AutoKill = false
-			getgenv().AutoRetry = false
-			getgenv().AutoSkip = false
-			getgenv().AutoChest = false
-			getgenv().OpenSecondChest = false
-			getgenv().AutoFailsafe = false
-			getgenv().AutoReload = false
-			getgenv().MultiHit = false
-			getgenv().MultiHitCount = 3
-			getgenv().DeleteMap = false
-			getgenv().AutoEscape = false
-			getgenv().Noclip = false
-			getgenv().SoloOnly = false
-			getgenv().AutoReturnLobby = false
-			getgenv().ReturnAfterGames = 10
-			getgenv().LastTitanWait = false
-			getgenv().LastTitanWaitSecs = 60
-			getgenv().DieAtStreak = false
-			getgenv().DieAtStreakCount = 10000
-			getgenv().SafeFarm = false
-			getgenv().AutoHooks = false
-			getgenv().DoubleJumpBoost = false
-			getgenv().AutoRoll = false
-			getgenv().AutoSlot = false
-			getgenv().AutoUpgrade = false
-			getgenv().AutoPerk = false
-			getgenv().AutoSkillTree = false
-			getgenv().AutoStart = false
-			getgenv().AutoPrestige = false
-			getgenv().AutoWaves = false
-			getgenv().AutoWavesUpgrade = false
-			getgenv().AutoStartWaves = false
-			getgenv().RewardWebhook = false
-			getgenv().MythicalFamilyWebhook = false
-			getgenv().WaitBeforeStart = false
-			getgenv().WaitBeforeStartSecs = 0
-			getgenv().AutoBoost = false
-			getgenv().AutoModifiers = false
-			getgenv().AutoClaimAchievements = false
-			getgenv().TitanESP = false
-			getgenv().TitanESPShowDead = true
-			getgenv().TitanESPHP = true
-			getgenv().TitanESPDistance = 3000
-			getgenv().TitanHitbox = false
-			getgenv().TitanHitboxSize = 35
-			getgenv().TitanHitboxTransparency = 0.5
-			getgenv().AutoTitanKiller = false
-			getgenv().AutoTitanKillerRange = 500
-			getgenv().AntiInjury = false
-
-			local genv = getgenv()
-			local autoExecute = isfile(v_u_4.value29)
-
-			if autoExecute then
-				autoExecute = readfile(v_u_4.value29) == "1"
-			end
-
-			genv.AutoExecute = autoExecute or false
-			getgenv().MasteryFarmConfig = {
-				Enabled = false,
-				Mode = "Both"
-			}
-			getgenv().AutoFarmConfig = {
-				Method = "Hover",
-				AttackCooldown = 1,
-				AttackRange = 150,
-				MoveSpeed = 400,
-				HeightOffset = 250
-			}
-			v_u_4.value35 = {
-				startTime = os.time(),
-				gamesPlayed = 0,
-				totalGold = 0,
-				totalGems = 0,
-				totalXP = 0,
-				crashes = 0
-			}
-			(function()
-				local function v47(p3, p4)
-					if isfile(p3) then
-						local readfile_ = readfile
-
-						return tonumber(readfile_(p3)) or p4
-					else
-						return p4
-					end
-				end
-
-				local v49 = v47(v_u_4.value24 .. "/s_elapsed.txt", 0)
-
-				v_u_4.value35 = {
-					startTime = os.time() - v49,
-					gamesPlayed = v47(v_u_4.value24 .. "/s_games.txt", 0),
-					totalGold = v47(v_u_4.value24 .. "/s_gold.txt", 0),
-					totalGems = v47(v_u_4.value24 .. "/s_gems.txt", 0),
-					totalXP = v47(v_u_4.value24 .. "/s_xp.txt", 0),
-					crashes = 0
-				}
-			end)()
-
-			function v_u_4.value36()
-				local v50 = os.time() - v_u_4.value35.startTime
-				local v51 = v50 / 3600
-				local v52 = math.floor(v51)
-				local v53 = v50 % 3600 / 60
-				local v54 = math.floor(v53)
-				local v55 = v50 % 60
-				local v56 = math.floor(v55)
-
-				return string.format("%02d:%02d:%02d", v52, v54, v56)
-			end
-
-			v_u_4.value37 = false
-			task.spawn(function()
-				while task.wait(0.5) do
-					local function v57()
-						local Interface = v_u_4.value2.PlayerGui:FindFirstChild("Interface")
-
-						if Interface then
-							Interface = Interface:FindFirstChild("Rewards")
-						end
-
-						local Visible
-
-						if Interface then
-							Visible = Interface.Visible
-
-							if Visible then
-								Visible = not v_u_4.value37
-							end
-						else
-							Visible = Interface
-						end
-
-						if Visible then
-							v_u_4.value37 = true
-							v_u_4.value35.gamesPlayed = v_u_4.value35.gamesPlayed + 1
-							getgenv()._missionStartTime = nil
-
-							local response = v_u_4.value8:InvokeServer("S_Rewards", "Get", true)
-							local Obtained
-
-							if response then
-								Obtained = response.Obtained
-							else
-								Obtained = response
-							end
-
-							if Obtained then
-								v_u_4.value35.totalGold = v_u_4.value35.totalGold + (response.Obtained.Gold or 0)
-								v_u_4.value35.totalGems = v_u_4.value35.totalGems + (response.Obtained.Gems or 0)
-								v_u_4.value35.totalXP = v_u_4.value35.totalXP + (response.Obtained.XP or 0)
-							end
-
-							local function v62()
-								local writefile_ = writefile
-								local v64 = v_u_4.value24 .. "/s_games.txt"
-								local gamesPlayed = v_u_4.value35.gamesPlayed
-
-								writefile_(v64, (tostring(gamesPlayed)))
-
-								local writefile_2 = writefile
-								local v67 = v_u_4.value24 .. "/s_gold.txt"
-								local totalGold = v_u_4.value35.totalGold
-
-								writefile_2(v67, (tostring(totalGold)))
-
-								local writefile_3 = writefile
-								local v70 = v_u_4.value24 .. "/s_gems.txt"
-								local totalGems = v_u_4.value35.totalGems
-
-								writefile_3(v70, (tostring(totalGems)))
-
-								local writefile_4 = writefile
-								local v73 = v_u_4.value24 .. "/s_xp.txt"
-								local totalXP = v_u_4.value35.totalXP
-
-								writefile_4(v73, (tostring(totalXP)))
-
-								local writefile_5 = writefile
-								local v76 = v_u_4.value24 .. "/s_elapsed.txt"
-								local v77 = os.time() - v_u_4.value35.startTime
-
-								writefile_5(v76, (tostring(v77)))
-							end
-
-							pcall(v62)
-
-							if not getgenv().AutoReturnLobby then
-								return
-							end
-
-							local readfile_ = readfile
-							local value27 = v_u_4.value27
-							local v80 = (tonumber(readfile_(value27)) or 0) + 1
-
-							if not (getgenv().ReturnAfterGames <= v80) then
-								writefile(v_u_4.value27, (tostring(v80)))
-
-								return
-							end
-
-							writefile(v_u_4.value27, "0")
-							task.spawn(function()
-								v_u_4.value8:InvokeServer("Functions", "Teleport", "Lobby")
-							end)
-							task.wait(0.5)
-							v_u_4.value4:Teleport(v_u_4.value15, v_u_4.value2)
-
-							return
-						end
-
-						if Interface then
-							Interface = not Interface.Visible
-						end
-
-						if not Interface then
-							return
-						end
-
-						v_u_4.value37 = false
-					end
-
-					pcall(v57)
-				end
-			end)
-
-			function v_u_4.value38(p5)
-				if not (p5 and (p5.Parent and p5.Visible)) then
-					return false
-				end
-
-				if v_u_4.value5.MenuIsOpen then
-					v_u_4.value12:SendKeyEvent(true, Enum.KeyCode.Escape, false, game)
-					v_u_4.value12:SendKeyEvent(false, Enum.KeyCode.Escape, false, game)
-					task.wait(0.1)
-				end
-
-				local u81 = false
-
-				pcall(function()
-					if not getconnections then
-						return
-					end
-
-					for _, v in pairs(getconnections(p5.MouseButton1Click)) do
-						v:Fire()
-						u81 = true
-					end
-
-					for _, v in pairs(getconnections(p5.Activated)) do
-						v:Fire()
-						u81 = true
-					end
-				end)
-
-				if u81 then
-					return u81
-				end
-
-				pcall(function()
-					v_u_4.value5.SelectedObject = p5
-
-					local AbsolutePosition = p5.AbsolutePosition
-					local AbsoluteSize = p5.AbsoluteSize
-					local v88 = AbsolutePosition.X + AbsoluteSize.X / 2
-					local v89 = AbsolutePosition.Y + AbsoluteSize.Y / 2 + 36
-
-					v_u_4.value12:SendMouseButtonEvent(v88, v89, 0, true, game, 1)
-					task.wait(0.05)
-					v_u_4.value12:SendMouseButtonEvent(v88, v89, 0, false, game, 1)
-					u81 = true
-				end)
-
-				return u81
-			end
-
-			v_u_4.value39 = {
-				_running = false
-			}
-			task.spawn(function()
-				while true do
-					pcall(function()
-						local Character = v_u_4.value2.Character
-
-						if Character then
-							Character = v_u_4.value2.Character:FindFirstChild("Injuries")
-						end
-
-						if not Character then
-							return
-						end
-
-						for _, v in Character:GetChildren() do
-							v:Destroy()
-						end
-					end)
-					task.wait(2.5)
-				end
-			end)
-
-			function v_u_4.value39.Start(p6)
-				if p6._running or v_u_4.value21 then
-					return
-				end
-
-				p6._running = true
-				task.spawn(function()
-					local function v93()
-						local Character = v_u_4.value2.Character
-
-						if Character then
-							v98 = Character:GetAttribute("Shifter")
-
-							if not v98 then
-								v98 = Character:FindFirstChild("Main")
-
-								if v98 then
-									v98 = Character.Main:FindFirstChild("W")
-								end
-							end
-						else
-							v98 = Character
-						end
-
-						local v95 = workspace:FindFirstChild("Unclimbable") ~= nil
-						local v96 = false
-						local Titans = workspace:FindFirstChild("Titans")
-
-						if not Titans then
-							if not v98 then
-								return v98
-							end
-
-							v98 = v95 and v96
-
-							return v98
-						end
-
-						local GetChildren = Titans.GetChildren
-
-						for _, v in ipairs(GetChildren(Titans)) do
-							local Fake = v:FindFirstChild("Fake")
-
-							if Fake then
-								Fake = v.Fake:FindFirstChild("Head")
-
-								if Fake then
-									Fake = v.Fake.Head:FindFirstChild("Header")
-								end
-							end
-
-							if Fake then
-								v96 = true
-
-								break
-							end
-						end
-
-						if not v98 then
-							return v98
-						end
-
-						local v102 = v95 and v96
-
-						return v102
-					end
-
-					local now = os.clock()
-
-					while true do
-						local _running = p6._running
-
-						if _running then
-							_running = not v93()
-						end
-
-						if not _running then
-							break
-						end
-
-						if os.clock() - now > 10 then
-							now = os.clock()
-						end
-
-						task.wait(1)
-
-						continue
-					end
-
-					if not p6._running then
-						return
-					end
-
-					local Titans = workspace:FindFirstChild("Titans")
-					local n2 = 0
-					local now2 = os.clock()
-					local v108 = false
-					local u109 = nil
-					local u110 = nil
-					local t5 = {}
-					local v112 = getgenv().AutoFarmConfig.AttackRange * getgenv().AutoFarmConfig.AttackRange
-
-					local function v113()
-						local Character = v_u_4.value2.Character
-
-						if not Character then
-							return false
-						end
-
-						local HumanoidRootPart = Character:FindFirstChild("HumanoidRootPart") or Character:FindFirstChild("Head")
-
-						if not HumanoidRootPart then
-							return false
-						end
-
-						if Character == u109 then
-							return true
-						end
-
-						u109 = Character
-						u110 = HumanoidRootPart
-						t5 = {}
-
-						local GetDescendants = Character.GetDescendants
-
-						for _, v in ipairs(GetDescendants(Character)) do
-							if v:IsA("BasePart") then
-								v.CanCollide = false
-
-								local v119 = t5
-
-								table.insert(v119, v)
-							end
-						end
-
-						return true
-					end
-
-					local v120 = t5
-					local Parent = nil
-					local t6 = {
-						Attack_Titan = true,
-						Armored_Titan = true,
-						Female_Titan = true,
-						Colossal_Titan = true
-					}
-					local n3 = 1
-					local n4 = 0
-					local v126 = nil
-					local n5 = 0
-					local t7 = {}
-					local n6 = 0
-
-					while true do
-						if not p6._running then
-							if u110 then
-								local Anchored = u110.Anchored
-							end
-
-							if not v125 then
-								return
-							end
-
-							u110.Anchored = false
-
-							return
-						end
-
-						if v_u_4.value2:GetAttribute("Cutscene") then
-							task.wait(0.05)
-
-							continue
-						elseif v21() then
-							local value2 = v_u_4.value2
-							local attribute = value2:GetAttribute("Slot")
-							local value182
-
-							if attribute then
-								value182 = v_u_4.value18
-
-								if value182 then
-									value182 = v_u_4.value18.Slots
-
-									if value182 then
-										value182 = v_u_4.value18.Slots[attribute]
-									end
-								end
-							else
-								value182 = attribute
-							end
-
-							if value182 then
-								if getgenv().DieAtStreak and (v_u_4.value2:GetAttribute("Streak") or 0) >= getgenv().DieAtStreakCount then
-									local Character = v_u_4.value2.Character
-
-									if Character then
-										Character = v_u_4.value2.Character:FindFirstChild("Humanoid")
-									end
-
-									if Character then
-										Character.Health = 0
-									end
-								end
-
-								getgenv().AutoFarmConfig.AttackCooldown = value182.Weapon == "Blades" and 0.15 or 1
-
-								if getgenv().AutoFailsafe then
-									if not p6.missionStartTime then
-										p6.missionStartTime = os.clock()
-									end
-
-									if os.clock() - p6.missionStartTime >= 900 then
-										p6:Stop()
-										task.spawn(function()
-											v_u_4.value8:InvokeServer("Functions", "Teleport", "Lobby")
-										end)
-										task.wait(0.5)
-										v_u_4.value4:Teleport(v_u_4.value15, v_u_4.value2)
-									end
-								end
-
-								local SoloOnly = getgenv().SoloOnly
-
-								if SoloOnly then
-									SoloOnly = workspace:GetAttribute("Player_Count") or #v_u_4.value1:GetPlayers() > 1
-								end
-
-								if SoloOnly then
-									p6:Stop()
-									task.spawn(function()
-										v_u_4.value8:InvokeServer("Functions", "Teleport", "Lobby")
-									end)
-									task.wait(0.5)
-									v_u_4.value4:Teleport(v_u_4.value15, v_u_4.value2)
-								end
-
-								if v113() then
-									Titans = workspace:FindFirstChild("Titans") or Titans
-
-									local Unclimbable = workspace:FindFirstChild("Unclimbable")
-
-									if Unclimbable then
-										Unclimbable = workspace.Unclimbable:FindFirstChild("Objective")
-									end
-
-									local Objectives = v_u_4.value3:FindFirstChild("Objectives")
-									local attribute2 = workspace:GetAttribute("Type")
-
-									if not attribute2 then
-										attribute2 = v_u_4.value18
-
-										if attribute2 then
-											attribute2 = v_u_4.value18.Map
-
-											if attribute2 then
-												attribute2 = v_u_4.value18.Map.Type
-											end
-										end
-									end
-
-									local Armored_Boss
-
-									if Unclimbable then
-										Armored_Boss = Unclimbable:FindFirstChild("Armored_Boss")
-									else
-										Armored_Boss = Unclimbable
-									end
-
-									if Titans then
-										local Armored_Titan = Titans:FindFirstChild("Armored_Titan")
-
-										if Armored_Titan then
-											Armored_Titan = Titans.Armored_Titan:GetAttribute("State")
-										end
-									end
-
-									local Defeat_Bertholdt
-
-									if Objectives then
-										Defeat_Bertholdt = Objectives:FindFirstChild("Defeat_Bertholdt")
-
-										if not Defeat_Bertholdt then
-											if Unclimbable then
-												Defeat_Bertholdt = Unclimbable:FindFirstChild("Colossal_Boss")
-											else
-												Defeat_Bertholdt = Unclimbable
-											end
-										end
-									else
-										Defeat_Bertholdt = Objectives
-									end
-
-									local Defeat_Annie
-
-									if Objectives then
-										Defeat_Annie = Objectives:FindFirstChild("Defeat_Annie")
-									else
-										Defeat_Annie = Objectives
-									end
-
-									local Female_Boss
-
-									if Unclimbable then
-										Female_Boss = Unclimbable:FindFirstChild("Female_Boss")
-									else
-										Female_Boss = Unclimbable
-									end
-
-									local Attack_Boss
-
-									if Unclimbable then
-										Attack_Boss = Unclimbable:FindFirstChild("Attack_Boss")
-									else
-										Attack_Boss = Unclimbable
-									end
-
-									if Defeat_Annie then
-										Defeat_Annie = not Female_Boss
-
-										if Defeat_Annie then
-											Defeat_Annie = not Attack_Boss
-										end
-									end
-
-									if Defeat_Annie then
-										task.wait(0.05)
-
-										continue
-									else
-										if Defeat_Bertholdt then
-											if Objectives then
-												Objectives = Objectives:FindFirstChild("Stall_Colossal_Titan")
-											end
-
-											local v144
-
-											if Objectives then
-												v144 = Objectives.Value >= (Objectives:GetAttribute("Requirement") or 1)
-											else
-												v144 = Objectives
-											end
-
-											if v144 then
-												if not getgenv()._colossalPhase2 then
-													getgenv()._colossalPhase2 = true
-													task.spawn(function()
-														while p6._running do
-															local Colossal_Titan = Titans:FindFirstChild("Colossal_Titan")
-															local Hitboxes
-
-															if Colossal_Titan then
-																Hitboxes = Colossal_Titan:FindFirstChild("Hitboxes")
-
-																if Hitboxes then
-																	Hitboxes = Colossal_Titan.Hitboxes:FindFirstChild("Hit")
-																end
-															else
-																Hitboxes = Colossal_Titan
-															end
-
-															if Hitboxes then
-																Hitboxes = Hitboxes:FindFirstChild("Nape")
-															end
-
-															if Hitboxes then
-																for _ = 1, 8 do
-																	v_u_4.value9:FireServer("Spears", "S_Explode", Hitboxes.Position + Vector3.new(0, 4, 0))
-																end
-
-																v_u_4.value9:FireServer("Hitboxes", "Register", Hitboxes, math.random(625, 850))
-															end
-
-															task.wait()
-														end
-
-														getgenv()._colossalPhase2 = false
-													end)
-												end
-											else
-												local Climbable = workspace:FindFirstChild("Climbable")
-
-												if Climbable then
-													Climbable = workspace.Climbable:FindFirstChild("Walls")
-												end
-
-												local Wall
-
-												if Climbable then
-													Wall = Climbable:FindFirstChild("Wall")
-
-													if Wall then
-														Wall = Climbable.Wall:FindFirstChild("Cannons")
-
-														if Wall then
-															Wall = Climbable.Wall.Cannons:FindFirstChild("1")
-														end
-													end
-												else
-													Wall = Climbable
-												end
-
-												local v151
-
-												if Wall then
-													v151 = not getgenv()._colossalCannon
-												else
-													v151 = Wall
-												end
-
-												if v151 then
-													getgenv()._colossalCannon = true
-													task.spawn(function()
-														while true do
-															local _running = p6._running
-
-															if _running then
-																_running = Objectives
-
-																if _running then
-																	_running = Objectives.Value < (Objectives:GetAttribute("Requirement") or 1)
-																end
-															end
-
-															if not _running then
-																local function v152()
-																	v_u_4.value8:InvokeServer("Cannon", "State", Wall, false)
-																end
-
-																pcall(v152)
-																getgenv()._colossalCannon = false
-
-																return
-															end
-
-															v_u_4.value8:InvokeServer("Cannon", "State", Wall, true)
-															task.wait(0.1)
-															v_u_4.value8:InvokeServer("Cannon", "Shoot", {
-																BarrelWood = 40,
-																Base = 0
-															})
-															task.wait(2)
-														end
-													end)
-												end
-											end
-										end
-
-										if math.fmod(os.clock(), 0.5) < 0.05 then
-											for i = 1, #v120 do
-												local v154 = v120[i]
-
-												if v154 then
-													local Parent2 = v154.Parent
-												end
-
-												if v150 then
-													v154.CanCollide = false
-												end
-											end
-										end
-
-										local now3 = os.clock()
-										local attribute3 = u109
-
-										if attribute3 then
-											attribute3 = u109:GetAttribute("Shifter")
-										end
-
-										local v158 = attribute3 or false
-										local Hitboxes, Fake, Collision, Nape, isBillboardGui, Parent2, v165, Parent3, Fake2, Collision2, Name, v170, v171, v172, v173, v174, v175, v176, v177, v178, v179, Marker, Nape2, v182, v183, v238_, v185, HumanoidRootPart, CFrame_, v188, v189, HumanoidRootPart2, v191, v192, s1, v194, v195, v196, v197, v198, t8, n7, v201, v202, v203, Spears, v205, v206, v207, v208, v209
-
-										if getgenv().MasteryFarmConfig.Enabled then
-											local attribute4 = v_u_4.value2:GetAttribute("Bar")
-
-											if attribute4 then
-												attribute4 = v_u_4.value2:GetAttribute("Bar") == 100
-											end
-
-											if not v158 and attribute4 then
-												if p6._running and v_u_4.value2.Character then
-													v_u_4.value2.Character:GetAttribute("Shifter")
-												end
-
-												while true do
-													v_u_4.value8:InvokeServer("S_Skills", "Usage", "999", false)
-													task.wait(1)
-
-													local v211 = not p6._running
-
-													if not v211 then
-														v211 = v_u_4.value2.Character
-
-														if v211 then
-															v211 = v_u_4.value2.Character:GetAttribute("Shifter")
-														end
-													end
-
-													if v211 then
-														break
-													else
-														continue
-													end
-												end
-
-												continue
-											else
-												if n5 <= now3 then
-													n5 = now3 + 0.1
-													table.clear(t7)
-
-													if Titans then
-														for _, child in ipairs(Titans.GetChildren(Titans)) do
-															if not child:GetAttribute("Killed") then
-																Hitboxes = child:FindFirstChild("Hitboxes")
-
-																if Hitboxes then
-																	Hitboxes = child.Hitboxes:FindFirstChild("Hit")
-																end
-
-																if Hitboxes then
-																	Fake = child:FindFirstChild("Fake")
-
-																	if Fake then
-																		Collision = Fake:FindFirstChild("Collision")
-
-																		if Collision then
-																			Collision = not Fake.Collision.CanCollide
-																		end
-																	else
-																		Collision = Fake
-																	end
-
-																	if not Collision then
-																		Nape = Hitboxes:FindFirstChild("Nape")
-
-																		if Nape then
-																			table.insert(t7, Nape)
-																		end
-																	end
-																end
-															end
-														end
-													end
-												end
-
-												v226 = u110.Position
-												v227 = false
-
-												if n6 <= now3 then
-													n6 = now3 + 1
-													Parent = nil
-
-													if Unclimbable then
-														for _, descendant in ipairs(Unclimbable:GetDescendants()) do
-															isBillboardGui = descendant:IsA("BillboardGui")
-
-															if isBillboardGui then
-																isBillboardGui = descendant.Parent
-
-																if isBillboardGui then
-																	isBillboardGui = descendant.Parent:IsA("BasePart")
-																end
-															end
-
-															if isBillboardGui then
-																Parent = descendant.Parent
-
-																break
-															end
-														end
-													end
-												end
-
-												if Parent then
-													Parent2 = Parent.Parent
-												else
-													Parent2 = Parent
-												end
-
-												if Parent2 then
-													v226 = Parent.Position
-													v227 = true
-												end
-
-												if v227 then
-													if Armored_Boss then
-														v227 = not v135
-													else
-														v227 = Armored_Boss
-													end
-												end
-
-												v229 = math.huge
-												v230 = math.huge
-												v231 = nil
-												v232 = false
-												v233 = false
-												v234 = nil
-												v235 = -math.huge
-												v236 = v_u_4.value18
-
-												if v236 then
-													v236 = v_u_4.value18.Map
-
-													if v236 then
-														v236 = v_u_4.value18.Map.Objective == "Stall"
-													end
-												end
-
-												for i = 1, #t7 do
-													v165 = t7[i]
-
-													if v165.Parent then
-														Parent3 = v165.Parent.Parent.Parent
-														Fake2 = Parent3:FindFirstChild("Fake")
-
-														if Fake2 then
-															Collision2 = Fake2:FindFirstChild("Collision")
-
-															if Collision2 then
-																Collision2 = not Fake2.Collision.CanCollide
-															end
-														else
-															Collision2 = Fake2
-														end
-
-														if not (Collision2 or Parent3:GetAttribute("Dead")) then
-															Name = Parent3.Name
-															v170 = t6[Name]
-
-															if Armored_Boss then
-																v171 = not v135
-
-																if v171 then
-																	v171 = Name == "Armored_Titan"
-																end
-															else
-																v171 = Armored_Boss
-															end
-
-															if not v171 then
-																if Defeat_Bertholdt then
-																	v172 = Name == "Colossal_Titan"
-																end
-
-																if not v172 then
-																	if v170 then
-																		v173 = not Parent3:GetAttribute("State")
-																	else
-																		v173 = v170
-																	end
-
-																	if not v173 then
-																		if v170 then
-																			v174 = Parent3:GetAttribute("Attack") == "Roar" or Parent3:GetAttribute("Attack") == "Berserk_Mode"
-																		else
-																			v174 = v170
-																		end
-
-																		v232 = Name == "Attack_Titan" and true or v232
-																		v175 = v226.X - v165.Position.X
-																		v176 = v226.Z - v165.Position.Z
-																		v177 = v175 * v175 + v176 * v176
-
-																		if getgenv()._currentTargetNape == v165 then
-																			v178 = v177 - 15000 or v177
-																		else
-																			v178 = v177
-																		end
-
-																		if v227 then
-																			v179 = v177 > 90000
-																		end
-
-																		if not v179 then
-																			if v170 then
-																				Marker = Parent3:FindFirstChild("Marker")
-
-																				if Marker then
-																					Marker = Parent3.Marker.Adornee
-																				end
-
-																				Nape2 = Marker or Parent3.Hitboxes.Hit.Nape
-
-																				if Nape2 then
-																					v182 = v178 < v230
-																				end
-
-																				if v182 then
-																					v230 = v178
-																				else
-																					v174 = v233
-																					Nape2 = v234
-																				end
-																			else
-																				v174 = v233
-																				Nape2 = v234
-																			end
-
-																			if v236 then
-																				if v235 < v165.Position.Z then
-																					v235 = v165.Position.Z
-																					v233 = v174
-																					v231 = v165
-																					v234 = Nape2
-																				else
-																					v233 = v174
-																					v234 = Nape2
-																				end
-																			elseif v178 < v229 then
-																				v233 = v174
-																				v231 = v165
-																				v234 = Nape2
-																				v229 = v178
-																			else
-																				v233 = v174
-																				v234 = Nape2
-																			end
-																		end
-																	end
-																end
-															end
-														end
-													end
-												end
-
-												v238 = v234 or v231
-												v239 = v238 == v234 and v233 and v233 or false
-
-												if v227 and v231 then
-													v238 = v231
-													v239 = false
-												end
-
-												if not getgenv()._missionStartTime then
-													getgenv()._missionStartTime = os.clock()
-												end
-
-												if v238 then
-													v183 = #t7 == 1
-
-													if v183 then
-														v183 = attribute2 == "Missions"
-
-														if v183 then
-															v183 = getgenv().LastTitanWait
-														end
-													end
-												else
-													v183 = v238
-												end
-
-												if v183 and os.clock() - getgenv()._missionStartTime < getgenv().LastTitanWaitSecs then
-													v238 = nil
-												end
-
-												getgenv()._currentTargetNape = v238
-
-												if v232 then
-													v126 = v126 or (now3 or nil)
-												else
-													v126 = nil
-												end
-
-												v240 = not v232
-
-												if not v240 then
-													if v126 then
-														v240 = now3 - v126 >= 5
-													else
-														v240 = v126
-													end
-												end
-
-												if v238 then
-													v238_ = v238
-
-													while true do
-														if true then
-															if v238 then
-																v185 = v238.Parent ~= Titans
-															else
-																v185 = v238
-															end
-														end
-
-														if not v185 then
-															break
-														end
-
-														v238 = v238.Parent
-
-														continue
-													end
-
-													if v158 then
-														HumanoidRootPart = v238:FindFirstChild("HumanoidRootPart")
-														CFrame_ = HumanoidRootPart and HumanoidRootPart.CFrame or v238_.CFrame
-
-														if u110.Anchored then
-															u110.Anchored = false
-														end
-
-														u110.AssemblyLinearVelocity = v_u_4.value14
-														u110.CFrame = CFrame_ * CFrame.new(0, 0, 80)
-
-														if v239 then
-															now3 = n4
-														else
-															v188 = getgenv().MasteryFarmConfig.Mode == "Punching" or getgenv().MasteryFarmConfig.Mode == "Both"
-
-															if v188 then
-																v188 = now3 - n4 >= 1
-															end
-
-															if v188 then
-																v_u_4.value9:FireServer("Attacks", "Slash", true)
-																v_u_4.value9:FireServer("Hitboxes", "Register", v238_, nil, nil, n3)
-																n3 = n3 >= 4 and 1 or n3 + 1
-															else
-																now3 = n4
-															end
-
-															v189 = getgenv().MasteryFarmConfig.Mode == "Skill Usage" or getgenv().MasteryFarmConfig.Mode == "Both"
-
-															if v189 then
-																v189 = value182.Skills
-
-																if v189 then
-																	v189 = value182.Skills.Shifter
-
-																	if v189 then
-																		v189 = not getgenv()._shiftingSkills
-																	end
-																end
-															end
-
-															if v189 then
-																getgenv()._shiftingSkills = true
-																task.spawn(function()
-																	for _, v in ipairs(value182.Skills.Shifter) do
-																		local v219 = tonumber(v)
-
-																		if v219 then
-																			v219 = not table.find({
-																				200,
-																				300,
-																				400,
-																				210,
-																				211,
-																				306,
-																				308,
-																				402,
-																				403,
-																				407
-																			}, v219)
-																		end
-
-																		if v219 then
-																			v_u_4.value8:InvokeServer("S_Skills", "Usage", tostring(v), false)
-																		end
-
-																		task.wait(1)
-																	end
-
-																	getgenv()._shiftingSkills = false
-																end)
-															end
-														end
-
-														task.wait(0.05)
-														n4 = now3
-
-														continue
-													else
-														HumanoidRootPart2 = v238:FindFirstChild("HumanoidRootPart") or v238:FindFirstChild("Head")
-
-														if HumanoidRootPart2 then
-															HumanoidRootPart2 = (HumanoidRootPart2.CFrame * CFrame.new(0, getgenv().AutoFarmConfig.HeightOffset, 30)).Position
-														end
-
-														v191 = HumanoidRootPart2 or v238_.Position + Vector3.new(0, getgenv().AutoFarmConfig.HeightOffset, 0)
-
-														if getgenv().AutoFarmConfig.Method == "Hover" then
-															if u110.Anchored then
-																u110.Anchored = false
-															end
-
-															v192 = v191 - u110.Position
-															s1 = "AssemblyLinearVelocity"
-															v194 = v192.Magnitude > 1
-
-															if v194 then
-																v194 = v192.Unit * getgenv().AutoFarmConfig.MoveSpeed
-															end
-
-															u110[s1] = v194 or v_u_4.value14
-														else
-															if not u110.Anchored then
-																u110.Anchored = true
-															end
-
-															u110.CFrame = CFrame.new(v191)
-															u110.AssemblyLinearVelocity = v_u_4.value14
-														end
-
-														if v240 then
-															v195 = not v108
-
-															if v195 then
-																if now3 - now2 >= 3 then
-																	v195 = now3 - n2 < 3
-																else
-																	v195 = false
-																end
-															end
-
-															if v195 then
-																v_u_4.value12:SendKeyEvent(true, Enum.KeyCode.R, false, game)
-																task.wait(0.05)
-																v_u_4.value12:SendKeyEvent(false, Enum.KeyCode.R, false, game)
-																task.wait(2)
-																now2 = os.clock()
-																v108 = false
-															end
-
-															v196 = u110.Position.X - v238_.Position.X
-															v197 = u110.Position.Z - v238_.Position.Z
-															v198 = not v239
-
-															if v198 then
-																v198 = not v108
-
-																if v198 then
-																	v198 = v196 * v196 + v197 * v197 <= v112
-
-																	if v198 then
-																		v198 = now3 - n2 >= getgenv().AutoFarmConfig.AttackCooldown
-																	end
-																end
-															end
-
-															if v198 then
-																t8 = { v238_ }
-
-																if getgenv().MultiHit then
-																	now2 = now3
-																	n7 = 1
-
-																	for i = 1, #t7 do
-																		if getgenv().MultiHitCount <= n7 then
-																			break
-																		end
-
-																		v201 = t7[i]
-																		v202 = v201 ~= v238_
-
-																		if v202 then
-																			v202 = v201.Parent
-
-																			if v202 then
-																				v202 = not v201.Parent.Parent.Parent:GetAttribute("Dead")
-																			end
-																		end
-
-																		if v202 then
-																			table.insert(t8, v201)
-																			n7 = n7 + 1
-																		end
-																	end
-																else
-																	now2 = now3
-																end
-
-																if value182.Weapon == "Blades" then
-																	v_u_4.value9:FireServer("Attacks", "Slash", true)
-																	n2 = now3
-
-																	for _, v in ipairs(t8) do
-																		v_u_4.value9:FireServer("Hitboxes", "Register", v, math.random(625, 850))
-																		now3 = n2
-																		n2 = now3
-																	end
-																else
-																	v203 = t6[v238_.Parent.Parent.Parent.Name]
-																	Spears = v_u_4.value7.Interface.HUD.Main.Top["7"].Spears.Spears
-																	v205, v206 = string.match(Spears.Text, "(%d+)%s*/%s*(%d+)")
-																	v207 = tonumber(v205)
-																	v208 = tonumber(v206)
-
-																	if v207 then
-																		v209 = v207 > 0
-																	end
-
-																	if v209 then
-																		task.spawn(function()
-																			local v223 = tonumber(string.match(Spears.Text, "(%d+)"))
-																			local value8 = v_u_4.value8
-																			local v225 = v207
-
-																			value8.InvokeServer(value8, "Spears", "S_Fire", (tostring(v225)))
-
-																			if tonumber(string.match(Spears.Text, "(%d+)")) ~= v223 then
-																				v253 = v203 and 40 or 1
-																				v254 = 0
-
-																				while true do
-																					v254 = v254 + 1
-
-																					if v254 > v253 then
-																						break
-																					end
-
-																					for _, v in ipairs(t8) do
-																						v_u_4.value9:FireServer("Spears", "S_Explode", v.Position)
-																					end
-																				end
-
-																				return
-																			end
-
-																			for i = v208, 1, -1 do
-																				local v237 = tonumber(string.match(Spears.Text, "(%d+)"))
-																				local value82 = v_u_4.value8
-
-																				value82.InvokeServer(value82, "Spears", "S_Fire", (tostring(i)))
-
-																				if tonumber(string.match(Spears.Text, "(%d+)")) < v237 then
-																					v253 = v203 and 40 or 1
-																					v254 = 0
-
-																					while true do
-																						v254 = v254 + 1
-
-																						if v254 > v253 then
-																							break
-																						end
-
-																						for _, v in ipairs(t8) do
-																							v_u_4.value9:FireServer("Spears", "S_Explode", v.Position)
-																						end
-																					end
-
-																					return
-																				end
-																			end
-
-																			local v241 = v203 and 40 or 1
-																			local n8 = 0
-
-																			while true do
-																				n8 = n8 + 1
-
-																				if n8 > v241 then
-																					break
-																				end
-
-																				for _, v in ipairs(t8) do
-																					v_u_4.value9:FireServer("Spears", "S_Explode", v.Position)
-																				end
-																			end
-																		end)
-																		n2 = now3
-																	else
-																		n2 = now3
-																	end
-																end
-															end
-
-															task.wait(0.05)
-
-															continue
-														else
-															task.wait(0.05)
-
-															continue
-														end
-													end
-												else
-													if u110.Anchored then
-														u110.Anchored = false
-													end
-
-													u110.AssemblyLinearVelocity = v_u_4.value14
-												end
-
-												task.wait(0.05)
-
-												continue
-											end
-										end
-
-										if n5 <= now3 then
-											n5 = now3 + 0.1
-											table.clear(t7)
-
-											if Titans then
-												for _, child in ipairs(Titans.GetChildren(Titans)) do
-													if not child:GetAttribute("Killed") then
-														Hitboxes = child:FindFirstChild("Hitboxes")
-
-														if Hitboxes then
-															Hitboxes = child.Hitboxes:FindFirstChild("Hit")
-														end
-
-														if Hitboxes then
-															Fake = child:FindFirstChild("Fake")
-
-															if Fake then
-																Collision = Fake:FindFirstChild("Collision")
-
-																if Collision then
-																	Collision = not Fake.Collision.CanCollide
-																end
-															else
-																Collision = Fake
-															end
-
-															if not Collision then
-																Nape = Hitboxes:FindFirstChild("Nape")
-
-																if Nape then
-																	table.insert(t7, Nape)
-																end
-															end
-														end
-													end
-												end
-											end
-										end
-
-										local Position = u110.Position
-										local v242 = false
-
-										if n6 <= now3 then
-											n6 = now3 + 1
-											Parent = nil
-
-											if Unclimbable then
-												for _, descendant in ipairs(Unclimbable:GetDescendants()) do
-													isBillboardGui = descendant:IsA("BillboardGui")
-
-													if isBillboardGui then
-														isBillboardGui = descendant.Parent
-
-														if isBillboardGui then
-															isBillboardGui = descendant.Parent:IsA("BasePart")
-														end
-													end
-
-													if isBillboardGui then
-														Parent = descendant.Parent
-
-														break
-													end
-												end
-											end
-										end
-
-										if Parent then
-											Parent2 = Parent.Parent
-										else
-											Parent2 = Parent
-										end
-
-										if Parent2 then
-											Position = Parent.Position
-											v242 = true
-										end
-
-										if v242 then
-											if Armored_Boss then
-												v242 = not v135
-											else
-												v242 = Armored_Boss
-											end
-										end
-
-										local huge = math.huge
-										local huge2 = math.huge
-										local v245 = nil
-										local v246 = false
-										local v247 = false
-										local v248 = nil
-										local v249 = -math.huge
-										local value183 = v_u_4.value18
-
-										if value183 then
-											value183 = v_u_4.value18.Map
-
-											if value183 then
-												value183 = v_u_4.value18.Map.Objective == "Stall"
-											end
-										end
-
-										for i = 1, #t7 do
-											v165 = t7[i]
-
-											if v165.Parent then
-												Parent3 = v165.Parent.Parent.Parent
-												Fake2 = Parent3:FindFirstChild("Fake")
-
-												if Fake2 then
-													Collision2 = Fake2:FindFirstChild("Collision")
-
-													if Collision2 then
-														Collision2 = not Fake2.Collision.CanCollide
-													end
-												else
-													Collision2 = Fake2
-												end
-
-												if not (Collision2 or Parent3:GetAttribute("Dead")) then
-													Name = Parent3.Name
-													v170 = t6[Name]
-
-													if Armored_Boss then
-														v171 = not v135
-
-														if v171 then
-															v171 = Name == "Armored_Titan"
-														end
-													else
-														v171 = Armored_Boss
-													end
-
-													if not v171 then
-														if Defeat_Bertholdt then
-															v172 = Name == "Colossal_Titan"
-														end
-
-														if not v172 then
-															if v170 then
-																v173 = not Parent3:GetAttribute("State")
-															else
-																v173 = v170
-															end
-
-															if not v173 then
-																if v170 then
-																	v174 = Parent3:GetAttribute("Attack") == "Roar" or Parent3:GetAttribute("Attack") == "Berserk_Mode"
-																else
-																	v174 = v170
-																end
-
-																v246 = Name == "Attack_Titan" and true or v246
-																v175 = Position.X - v165.Position.X
-																v176 = Position.Z - v165.Position.Z
-																v177 = v175 * v175 + v176 * v176
-
-																if getgenv()._currentTargetNape == v165 then
-																	v178 = v177 - 15000 or v177
-																else
-																	v178 = v177
-																end
-
-																if v242 then
-																	v179 = v177 > 90000
-																end
-
-																if not v179 then
-																	if v170 then
-																		Marker = Parent3:FindFirstChild("Marker")
-
-																		if Marker then
-																			Marker = Parent3.Marker.Adornee
-																		end
-
-																		Nape2 = Marker or Parent3.Hitboxes.Hit.Nape
-
-																		if Nape2 then
-																			v182 = v178 < huge2
-																		end
-
-																		if v182 then
-																			huge2 = v178
-																		else
-																			v174 = v247
-																			Nape2 = v248
-																		end
-																	else
-																		v174 = v247
-																		Nape2 = v248
-																	end
-
-																	if value183 then
-																		if v249 < v165.Position.Z then
-																			v249 = v165.Position.Z
-																			v247 = v174
-																			v245 = v165
-																			v248 = Nape2
-																		else
-																			v247 = v174
-																			v248 = Nape2
-																		end
-																	elseif v178 < huge then
-																		v247 = v174
-																		v245 = v165
-																		v248 = Nape2
-																		huge = v178
-																	else
-																		v247 = v174
-																		v248 = Nape2
-																	end
-																end
-															end
-														end
-													end
-												end
-											end
-										end
-
-										local Parent4 = v248 or v245
-										local v255 = Parent4 == v248 and v247 and v247 or false
-
-										if v242 and v245 then
-											Parent4 = v245
-											v255 = false
-										end
-
-										if not getgenv()._missionStartTime then
-											getgenv()._missionStartTime = os.clock()
-										end
-
-										if Parent4 then
-											v183 = #t7 == 1
-
-											if v183 then
-												v183 = attribute2 == "Missions"
-
-												if v183 then
-													v183 = getgenv().LastTitanWait
-												end
-											end
-										else
-											v183 = Parent4
-										end
-
-										if v183 and os.clock() - getgenv()._missionStartTime < getgenv().LastTitanWaitSecs then
-											Parent4 = nil
-										end
-
-										getgenv()._currentTargetNape = Parent4
-
-										if v246 then
-											v126 = v126 or (now3 or nil)
-										else
-											v126 = nil
-										end
-
-										local v256 = not v246
-
-										if not v256 then
-											if v126 then
-												v256 = now3 - v126 >= 5
-											else
-												v256 = v126
-											end
-										end
-
-										if Parent4 then
-											v238_ = Parent4
-
-											while true do
-												if true then
-													if Parent4 then
-														v185 = Parent4.Parent ~= Titans
-													else
-														v185 = Parent4
-													end
-												end
-
-												if not v185 then
-													break
-												end
-
-												Parent4 = Parent4.Parent
-
-												continue
-											end
-
-											if v158 then
-												HumanoidRootPart = Parent4:FindFirstChild("HumanoidRootPart")
-												CFrame_ = HumanoidRootPart and HumanoidRootPart.CFrame or v238_.CFrame
-
-												if u110.Anchored then
-													u110.Anchored = false
-												end
-
-												u110.AssemblyLinearVelocity = v_u_4.value14
-												u110.CFrame = CFrame_ * CFrame.new(0, 0, 80)
-
-												if v255 then
-													now3 = n4
-												else
-													v188 = getgenv().MasteryFarmConfig.Mode == "Punching" or getgenv().MasteryFarmConfig.Mode == "Both"
-
-													if v188 then
-														v188 = now3 - n4 >= 1
-													end
-
-													if v188 then
-														v_u_4.value9:FireServer("Attacks", "Slash", true)
-														v_u_4.value9:FireServer("Hitboxes", "Register", v238_, nil, nil, n3)
-														n3 = n3 >= 4 and 1 or n3 + 1
-													else
-														now3 = n4
-													end
-
-													v189 = getgenv().MasteryFarmConfig.Mode == "Skill Usage" or getgenv().MasteryFarmConfig.Mode == "Both"
-
-													if v189 then
-														v189 = value182.Skills
-
-														if v189 then
-															v189 = value182.Skills.Shifter
-
-															if v189 then
-																v189 = not getgenv()._shiftingSkills
-															end
-														end
-													end
-
-													if v189 then
-														getgenv()._shiftingSkills = true
-														task.spawn(function()
-															for _, v in ipairs(value182.Skills.Shifter) do
-																local v257 = tonumber(v)
-
-																if v257 then
-																	v257 = not table.find({
-																		200,
-																		300,
-																		400,
-																		210,
-																		211,
-																		306,
-																		308,
-																		402,
-																		403,
-																		407
-																	}, v257)
-																end
-
-																if v257 then
-																	v_u_4.value8:InvokeServer("S_Skills", "Usage", tostring(v), false)
-																end
-
-																task.wait(1)
-															end
-
-															getgenv()._shiftingSkills = false
-														end)
-													end
-												end
-
-												task.wait(0.05)
-												n4 = now3
-
-												continue
-											else
-												HumanoidRootPart2 = Parent4:FindFirstChild("HumanoidRootPart") or Parent4:FindFirstChild("Head")
-
-												if HumanoidRootPart2 then
-													HumanoidRootPart2 = (HumanoidRootPart2.CFrame * CFrame.new(0, getgenv().AutoFarmConfig.HeightOffset, 30)).Position
-												end
-
-												v191 = HumanoidRootPart2 or v238_.Position + Vector3.new(0, getgenv().AutoFarmConfig.HeightOffset, 0)
-
-												if getgenv().AutoFarmConfig.Method == "Hover" then
-													if u110.Anchored then
-														u110.Anchored = false
-													end
-
-													v192 = v191 - u110.Position
-													s1 = "AssemblyLinearVelocity"
-													v194 = v192.Magnitude > 1
-
-													if v194 then
-														v194 = v192.Unit * getgenv().AutoFarmConfig.MoveSpeed
-													end
-
-													u110[s1] = v194 or v_u_4.value14
-												else
-													if not u110.Anchored then
-														u110.Anchored = true
-													end
-
-													u110.CFrame = CFrame.new(v191)
-													u110.AssemblyLinearVelocity = v_u_4.value14
-												end
-
-												if v256 then
-													v195 = not v108
-
-													if v195 then
-														if now3 - now2 >= 3 then
-															v195 = now3 - n2 < 3
-														else
-															v195 = false
-														end
-													end
-
-													if v195 then
-														v_u_4.value12:SendKeyEvent(true, Enum.KeyCode.R, false, game)
-														task.wait(0.05)
-														v_u_4.value12:SendKeyEvent(false, Enum.KeyCode.R, false, game)
-														task.wait(2)
-														now2 = os.clock()
-														v108 = false
-													end
-
-													v196 = u110.Position.X - v238_.Position.X
-													v197 = u110.Position.Z - v238_.Position.Z
-													v198 = not v255
-
-													if v198 then
-														v198 = not v108
-
-														if v198 then
-															v198 = v196 * v196 + v197 * v197 <= v112
-
-															if v198 then
-																v198 = now3 - n2 >= getgenv().AutoFarmConfig.AttackCooldown
-															end
-														end
-													end
-
-													if v198 then
-														t8 = { v238_ }
-
-														if getgenv().MultiHit then
-															now2 = now3
-															n7 = 1
-
-															for i = 1, #t7 do
-																if getgenv().MultiHitCount <= n7 then
-																	break
-																end
-
-																v201 = t7[i]
-																v202 = v201 ~= v238_
-
-																if v202 then
-																	v202 = v201.Parent
-
-																	if v202 then
-																		v202 = not v201.Parent.Parent.Parent:GetAttribute("Dead")
-																	end
-																end
-
-																if v202 then
-																	table.insert(t8, v201)
-																	n7 = n7 + 1
-																end
-															end
-														else
-															now2 = now3
-														end
-
-														if value182.Weapon == "Blades" then
-															v_u_4.value9:FireServer("Attacks", "Slash", true)
-															n2 = now3
-
-															for _, v in ipairs(t8) do
-																v_u_4.value9:FireServer("Hitboxes", "Register", v, math.random(625, 850))
-																now3 = n2
-																n2 = now3
-															end
-														else
-															v203 = t6[v238_.Parent.Parent.Parent.Name]
-															Spears = v_u_4.value7.Interface.HUD.Main.Top["7"].Spears.Spears
-															v205, v206 = string.match(Spears.Text, "(%d+)%s*/%s*(%d+)")
-															v207 = tonumber(v205)
-															v208 = tonumber(v206)
-
-															if v207 then
-																v209 = v207 > 0
-															end
-
-															if v209 then
-																task.spawn(function()
-																	local v261 = tonumber(string.match(Spears.Text, "(%d+)"))
-																	local value8 = v_u_4.value8
-																	local v263 = v207
-
-																	value8.InvokeServer(value8, "Spears", "S_Fire", (tostring(v263)))
-
-																	if tonumber(string.match(Spears.Text, "(%d+)")) ~= v261 then
-																		v253 = v203 and 40 or 1
-																		v254 = 0
-
-																		while true do
-																			v254 = v254 + 1
-
-																			if v254 > v253 then
-																				break
-																			end
-
-																			for _, v in ipairs(t8) do
-																				v_u_4.value9:FireServer("Spears", "S_Explode", v.Position)
-																			end
-																		end
-
-																		return
-																	end
-
-																	for i = v208, 1, -1 do
-																		local v267 = tonumber(string.match(Spears.Text, "(%d+)"))
-																		local value82 = v_u_4.value8
-
-																		value82.InvokeServer(value82, "Spears", "S_Fire", (tostring(i)))
-
-																		if tonumber(string.match(Spears.Text, "(%d+)")) < v267 then
-																			v253 = v203 and 40 or 1
-																			v254 = 0
-
-																			while true do
-																				v254 = v254 + 1
-
-																				if v254 > v253 then
-																					break
-																				end
-
-																				for _, v in ipairs(t8) do
-																					v_u_4.value9:FireServer("Spears", "S_Explode", v.Position)
-																				end
-																			end
-
-																			return
-																		end
-																	end
-
-																	local v271 = v203 and 40 or 1
-																	local n9 = 0
-
-																	while true do
-																		n9 = n9 + 1
-
-																		if n9 > v271 then
-																			break
-																		end
-
-																		for _, v in ipairs(t8) do
-																			v_u_4.value9:FireServer("Spears", "S_Explode", v.Position)
-																		end
-																	end
-																end)
-																n2 = now3
-															else
-																n2 = now3
-															end
-														end
-													end
-
-													task.wait(0.05)
-
-													continue
-												else
-													task.wait(0.05)
-
-													continue
-												end
-											end
-										else
-											if u110.Anchored then
-												u110.Anchored = false
-											end
-
-											u110.AssemblyLinearVelocity = v_u_4.value14
-										end
-
-										task.wait(0.05)
-
-										continue
-									end
-								else
-									task.wait(0.05)
-
-									continue
-								end
-							else
-								task.wait(1)
-
-								continue
-							end
-						else
-							task.wait(1)
-
-							continue
-						end
-					end
-				end)
-			end
-			function v_u_4.value39.Stop(p7)
-				p7._running = false
-				getgenv()._missionStartTime = nil
-				getgenv()._colossalCannon = false
-				getgenv()._colossalPhase2 = false
-
-				local Character = v_u_4.value2.Character
-
-				if Character then
-					Character = v_u_4.value2.Character:FindFirstChild("Head") or v_u_4.value2.Character:FindFirstChild("HumanoidRootPart")
-				end
-
-				local Anchored
-
-				if Character then
-					Anchored = Character.Anchored
-				else
-					Anchored = Character
-				end
-
-				if not Anchored then
-					return
-				end
-
-				Character.Anchored = false
-			end
-
-			v_u_4.value40 = false
-			v_u_4.value41 = nil
-			v_u_4.value41 = 0
-
-			function v_u_4.value42()
-				if not getgenv().AutoReload or (v_u_4.value40 or v_u_4.value21) then
-					return
-				end
-
-				if os.clock() - v_u_4.value41 < 0.5 then
-					return
-				end
-
-				local HUD = v_u_4.value13:FindFirstChild("HUD")
-				local Main
-
-				if HUD then
-					Main = HUD:FindFirstChild("Main")
-
-					if Main then
-						Main = HUD.Main:FindFirstChild("Top")
-
-						if Main then
-							Main = HUD.Main.Top:FindFirstChild("7")
-						end
-					end
-				else
-					Main = HUD
-				end
-
-				if not Main then
-					return
-				end
-
-				local Blades = Main:FindFirstChild("Blades")
-				local Spears = Main:FindFirstChild("Spears")
-				local Visible
-
-				if Blades then
-					Visible = Blades.Visible
-				else
-					Visible = Blades
-				end
-
-				if Visible then
-					local Sets = Blades:FindFirstChild("Sets")
-
-					if Sets then
-						local Text = Sets.Text
-
-						Sets = tonumber(Text:match("(%d+)"))
-					end
-
-					local v284 = Sets or 0
-
-					if v284 == 0 then
-						v_u_4.value41 = os.clock()
-						pcall(function()
-							v_u_4.value9:FireServer("Attacks", "Reload")
-						end)
-						task.delay(1.5, function() end)
-					else
-						local Character = v_u_4.value2.Character
-
-						if Character then
-							Character = Character:FindFirstChild("Rig_" .. v_u_4.value2.Name)
-						end
-
-						local LeftHand
-
-						if Character then
-							LeftHand = Character:FindFirstChild("LeftHand")
-
-							if LeftHand then
-								LeftHand = Character.LeftHand:FindFirstChild("Blade_1")
-							end
-						else
-							LeftHand = Character
-						end
-
-						if LeftHand then
-							if LeftHand.Transparency == 1 then
-								LeftHand = v284 > 0
-							else
-								LeftHand = false
-							end
-						end
-
-						if not LeftHand then
-							return
-						end
-
-						local function v287()
-							v_u_4.value8:InvokeServer("Blades", "Reload")
-						end
-
-						v_u_4.value41 = os.clock()
-						pcall(v287)
-						task.delay(0.5, function() end)
-					end
-				end
-
-				local Visible2
-
-				if Spears then
-					Visible2 = Spears.Visible
-				else
-					Visible2 = Spears
-				end
-
-				if not Visible2 then
-					return
-				end
-
-				local Spears2 = Spears:FindFirstChild("Spears")
-
-				if Spears2 then
-					local Text = Spears.Spears.Text
-
-					Spears2 = tonumber(Text:match("(%d+)"))
-				end
-
-				if (Spears2 or 0) ~= 0 then
-					return
-				end
-
-				local function v291()
-					v_u_4.value9:FireServer("Attacks", "Reload")
-				end
-
-				v_u_4.value41 = os.clock()
-				pcall(v291)
-				task.delay(1.5, function() end)
-			end
-
-			task.spawn(function()
-				while true do
-					pcall(v_u_4.value42)
-					task.wait(0.5)
-				end
-			end)
-			v_u_4.value43 = false
-
-			local function v292()
-				if game.PlaceId == v_u_4.value15 or (v_u_4.value43 or (not getgenv().DeleteMap or v_u_4.value18.Map.Type == "Raids")) then
-					return
-				end
-
-				task.spawn(function()
-					while getgenv().DeleteMap and (game.PlaceId ~= v_u_4.value15 and (workspace:FindFirstChild("Climbable") and v_u_4.value18.Map.Type ~= "Raids")) do
-						local children, v294, v295 = workspace.Climbable:GetChildren()
-
-						while true do
-							local v296
-
-							v295, v296 = children(v294, v295)
-
-							if not v295 then
-								break
-							end
-
-							v296:Destroy()
-						end
-
-						for _, v in workspace.Unclimbable:GetChildren() do
-							local v299 = v.Name ~= "Reloads"
-
-							if v299 then
-								v299 = v.Name ~= "Objective"
-
-								if v299 then
-									v299 = v.Name ~= "Cutscene"
-								end
-							end
-
-							if v299 then
-								v:Destroy()
-							end
-						end
-
-						task.wait(3)
-					end
-				end)
-			end
-
-			task.spawn(function()
-				while task.wait(0.5) do
-					local function v300()
-						if getgenv().AutoSkip then
-							local Skip = v_u_4.value13:FindFirstChild("Skip")
-							local Visible
-
-							if Skip then
-								Visible = Skip.Visible
-							else
-								Visible = Skip
-							end
-
-							if Visible then
-								for _ = 1, 5 do
-									local Interact = Skip:FindFirstChild("Interact")
-
-									if Interact then
-										v_u_4.value38(Interact)
-									end
-
-									task.wait(0.3)
-
-									if not Skip.Visible then
-										break
-									end
-								end
-							end
-						end
-
-						if getgenv().AutoChest then
-							local Chests = v_u_4.value13:FindFirstChild("Chests")
-							local Visible
-
-							if Chests then
-								Visible = Chests.Visible
-							else
-								Visible = Chests
-							end
-
-							if Visible then
-								local Free = Chests:FindFirstChild("Free")
-								local Premium = Chests:FindFirstChild("Premium")
-								local Finish = Chests:FindFirstChild("Finish")
-								local Visible2
-
-								if Free then
-									Visible2 = Free.Visible
-								else
-									Visible2 = Free
-								end
-
-								if Visible2 then
-									v_u_4.value38(Free)
-
-									if Free.Visible then
-										local _ = not Chests.Visible
-									end
-
-									repeat
-										task.wait(0.5)
-									until not (Free.Visible and Chests.Visible)
-								end
-
-								local Visible3
-
-								if Premium then
-									Visible3 = Premium.Visible
-
-									if Visible3 then
-										Visible3 = getgenv().OpenSecondChest
-									end
-								else
-									Visible3 = Premium
-								end
-
-								if Visible3 then
-									task.wait(0.5)
-									v_u_4.value38(Premium)
-
-									if Premium.Visible then
-										local _ = not Chests.Visible
-									end
-
-									repeat
-										task.wait(0.5)
-									until not (Premium.Visible and Chests.Visible)
-								end
-
-								local Visible4
-
-								if Finish then
-									Visible4 = Finish.Visible
-								else
-									Visible4 = Finish
-								end
-
-								if Visible4 then
-									task.wait(0.3)
-									v_u_4.value38(Finish)
-								end
-							end
-						end
-
-						if not getgenv().AutoRetry then
-							return
-						end
-
-						local Rewards = v_u_4.value13:FindFirstChild("Rewards")
-						local Visible
-
-						if Rewards then
-							Visible = Rewards.Visible
-						else
-							Visible = Rewards
-						end
-
-						if not Visible then
-							getgenv()._lastRetry = nil
-
-							return
-						end
-
-						if not (os.clock() - (getgenv()._lastRetry or 0) >= 1.5) then
-							return
-						end
-
-						getgenv()._lastRetry = os.clock()
-
-						local function v317()
-							v_u_4.value8:InvokeServer("Functions", "Retry", "Add")
-						end
-
-						pcall(v317)
-
-						local Main = Rewards:FindFirstChild("Main")
-						local Visible2
-
-						if not Main then
-							if Main then
-								Visible2 = Main.Visible
-							else
-								Visible2 = Main
-							end
-
-							if Visible2 then
-								v_u_4.value38(Main)
-							end
-
-							return
-						end
-
-						Main = Rewards.Main:FindFirstChild("Info")
-
-						if not Main then
-							if Main then
-								Visible2 = Main.Visible
-							else
-								Visible2 = Main
-							end
-
-							if Visible2 then
-								v_u_4.value38(Main)
-							end
-
-							return
-						end
-
-						Main = Rewards.Main.Info:FindFirstChild("Main")
-
-						if not Main then
-							if Main then
-								Visible2 = Main.Visible
-							else
-								Visible2 = Main
-							end
-
-							if Visible2 then
-								v_u_4.value38(Main)
-							end
-
-							return
-						end
-
-						Main = Rewards.Main.Info.Main:FindFirstChild("Buttons")
-
-						if not Main then
-							if Main then
-								Visible2 = Main.Visible
-							else
-								Visible2 = Main
-							end
-
-							if Visible2 then
-								v_u_4.value38(Main)
-							end
-
-							return
-						end
-
-						Main = Rewards.Main.Info.Main.Buttons:FindFirstChild("Retry")
-
-						if Main then
-							Visible2 = Main.Visible
-						else
-							Visible2 = Main
-						end
-
-						if Visible2 then
-							v_u_4.value38(Main)
-						end
-					end
-
-					pcall(v300)
-				end
-			end)
-
-			function v_u_4.value44(p8, p9)
-				if not v_u_4.value7.Interface.Customisation.Visible then
-					return
-				end
-
-				local Text = v_u_4.value7.Interface.Customisation.Family.Family.Title.Text
-				local v321
-
-				if p8 then
-					v321 = string.lower(string.split(Text, " ")[1])
-				else
-					v321 = p8
-				end
-
-				local v322 = v321 or nil
-				local v323 = string.lower(string.match(Text, "%((.-)%)") or "")
-				local v324 = false
-
-				if p8 then
-					if v322 then
-						v322 = table.find(p8, v322)
-					end
-				else
-					v322 = p8
-				end
-
-				local v325 = v322 and true or v324
-
-				if p9 then
-					p9 = table.find(p9, v323)
-				end
-
-				if v323 == "mythical" and true or (p9 and true or v325) then
-					getgenv().AutoRoll = false
-
-					local v326 = "Target family rolled: " .. Text
-					local s2 = "Astra Hub"
-
-					local function v328()
-						local t9 = {
-							Title = s2,
-							Icon = "notifications_active",
-							ImageSource = "Material",
-							Content = v326
-						}
-
-						v_u_4.value16:Notification(t9)
-					end
-
-					pcall(v328)
-
-					return
-				end
-
-				if v_u_4.value7.Interface.Warning.Prompt.Visible then
-					v_u_4.value38(v_u_4.value7.Interface.Warning.Prompt.Main.Yes)
-					task.wait(0.5)
-				end
-
-				local value10 = v_u_4.value10
-
-				if value10 then
-					value10 = not v_u_4.value10.Visible
-				end
-
-				if value10 then
-					v_u_4.value38(v_u_4.value7.Interface.Customisation.Categories.Family.Interact)
-					task.wait(1)
-				end
-
-				if not v_u_4.value11 then
-					return
-				end
-
-				v_u_4.value38(v_u_4.value11)
-			end
-			function v_u_4.value45(p10)
-				local t10 = {
-					AutoKill = getgenv().AutoKill,
-					KillAura = false,
-					KillAuraRange = 50,
-					AutoRetry = getgenv().AutoRetry,
-					AutoSkip = getgenv().AutoSkip,
-					AutoChest = getgenv().AutoChest,
-					OpenSecondChest = getgenv().OpenSecondChest,
-					AutoFailsafe = getgenv().AutoFailsafe,
-					AutoReload = getgenv().AutoReload,
-					MultiHit = getgenv().MultiHit,
-					MultiHitCount = getgenv().MultiHitCount,
-					DeleteMap = getgenv().DeleteMap,
-					Method = getgenv().AutoFarmConfig.Method,
-					HeightOffset = getgenv().AutoFarmConfig.HeightOffset,
-					MoveSpeed = getgenv().AutoFarmConfig.MoveSpeed,
-					AutoEscape = getgenv().AutoEscape,
-					Noclip = getgenv().Noclip,
-					SoloOnly = getgenv().SoloOnly,
-					AutoReturnLobby = getgenv().AutoReturnLobby,
-					ReturnAfterGames = getgenv().ReturnAfterGames,
-					SafeFarm = getgenv().SafeFarm,
-					AutoHooks = getgenv().AutoHooks,
-					DoubleJumpBoost = getgenv().DoubleJumpBoost,
-					MasteryFarmEnabled = getgenv().MasteryFarmConfig.Enabled,
-					MasteryMode = getgenv().MasteryFarmConfig.Mode,
-					LastTitanWait = getgenv().LastTitanWait,
-					LastTitanWaitSecs = getgenv().LastTitanWaitSecs,
-					DieAtStreak = getgenv().DieAtStreak,
-					DieAtStreakCount = getgenv().DieAtStreakCount,
-					AutoRoll = getgenv().AutoRoll,
-					AutoSlot = getgenv().AutoSlot,
-					AutoUpgrade = getgenv().AutoUpgrade,
-					AutoPerk = getgenv().AutoPerk,
-					AutoSkillTree = getgenv().AutoSkillTree,
-					AutoStart = getgenv().AutoStart,
-					AutoWaves = getgenv().AutoWaves,
-					AutoWavesUpgrade = getgenv().AutoWavesUpgrade,
-					TitanESP = getgenv().TitanESP,
-					TitanHitbox = getgenv().TitanHitbox,
-					TitanHitboxSize = getgenv().TitanHitboxSize,
-					TitanESPHP = getgenv().TitanESPHP,
-					TitanESPDistance = getgenv().TitanESPDistance,
-					AutoTitanKiller = getgenv().AutoTitanKiller,
-					AutoTitanKillerRange = getgenv().AutoTitanKillerRange
-				}
-
-				writefile(v_u_4.value25 .. "/" .. p10 .. ".json", v_u_4.value6:JSONEncode(t10))
-			end
-			function v_u_4.value46(p11)
-				local v332 = v_u_4.value25 .. "/" .. p11 .. ".json"
-
-				if not isfile(v332) then
-					return
-				end
-
-				local function v333()
-					return v_u_4.value6:JSONDecode(v_u_2({ readfile(v332) }))
-				end
-
-				local ok, result = pcall(v333)
-
-				if ok then
-					ok = type(result) == "table"
-				end
-
-				if not ok then
-					return
-				end
-
-				local v336, v337, v338 = pairs(result)
-
-				while true do
-					local v339
-
-					v338, v339 = v336(v337, v338)
-
-					if not v338 then
-						break
-					end
-
-					if getgenv()[v338] ~= nil then
-						getgenv()[v338] = v339
-					end
-				end
-
-				if result.Method then
-					getgenv().AutoFarmConfig.Method = result.Method
-				end
-
-				if result.HeightOffset then
-					getgenv().AutoFarmConfig.HeightOffset = result.HeightOffset
-				end
-
-				if result.MoveSpeed then
-					getgenv().AutoFarmConfig.MoveSpeed = result.MoveSpeed
-				end
-
-				if result.MasteryFarmEnabled ~= nil then
-					getgenv().MasteryFarmConfig.Enabled = result.MasteryFarmEnabled
-				end
-
-				if result.MasteryMode then
-					getgenv().MasteryFarmConfig.Mode = result.MasteryMode
-				end
-
-				if getgenv().AutoKill then
-					v_u_4.value39:Start()
-				else
-					v_u_4.value39:Stop()
-				end
-
-				if not getgenv().DeleteMap then
-					return
-				end
-
-				v292()
-			end
-
-			v_u_4.value47 = nil
-
-			if isfile(v_u_4.value26) then
-				local v340 = readfile(v_u_4.value26)
-
-				if isfile(v_u_4.value25 .. "/" .. v340 .. ".json") then
-					v_u_4.value47 = v340
-					v_u_4.value46(v340)
-				else
-					delfile(v_u_4.value26)
-				end
-			end
-
-			local v341 = v14:CreateTab({
-				Name = "Main Farm",
-				Icon = "adjust",
-				ImageSource = "Material",
-				ShowTitle = true
-			})
-			local v342 = v14:CreateTab({
-				Name = "Titans",
-				Icon = "pest_control",
-				ImageSource = "Material",
-				ShowTitle = true
-			})
-			local v343 = v14:CreateTab({
-				Name = "Waves",
-				Icon = "waves",
-				ImageSource = "Material",
-				ShowTitle = true
-			})
-			local v344 = v14:CreateTab({
-				Name = "Upgrades & Skills",
-				Icon = "upgrade",
-				ImageSource = "Material",
-				ShowTitle = true
-			})
-			local v345 = v14:CreateTab({
-				Name = "Advanced / Safety",
-				Icon = "security",
-				ImageSource = "Material",
-				ShowTitle = true
-			})
-			local v346 = v14:CreateTab({
-				Name = "Mastery",
-				Icon = "military_tech",
-				ImageSource = "Material",
-				ShowTitle = true
-			})
-			local v347 = v14:CreateTab({
-				Name = "Global / Rolls",
-				Icon = "public",
-				ImageSource = "Material",
-				ShowTitle = true
-			})
-			local v348 = v14:CreateTab({
-				Name = "Utils",
-				Icon = "build",
-				ImageSource = "Material",
-				ShowTitle = true
-			})
-			local v349 = v14:CreateTab({
-				Name = "Configs",
-				Icon = "save",
-				ImageSource = "Material",
-				ShowTitle = true
-			})
-			local v350 = v14:CreateTab({
-				Name = "Stats Tracker",
-				Icon = "leaderboard",
-				ImageSource = "Material",
-				ShowTitle = true
-			})
-
-			v341:CreateSection("Core Auto Farm")
-			v341.CreateToggle(v341, {
-				Name = "Auto Farm",
-				CurrentValue = getgenv().AutoKill,
-				Callback = function(p12)
-					getgenv().AutoKill = p12
-
-					if p12 then
-						v_u_4.value39:Start()
-					else
-						v_u_4.value39:Stop()
-					end
-				end
-			}, "AutoKill")
-			v341:CreateDropdown({
-				Name = "Movement Mode",
-				Options = { "Hover", "Teleport" },
-				CurrentOption = { getgenv().AutoFarmConfig.Method },
-				MultipleOptions = false,
-				Callback = function(p13)
-					getgenv().AutoFarmConfig.Method = v_u_4.value17(p13)
-				end
-			}, "MoveMode")
-
-			local t11 = {
-				Name = "Float Height",
-				Range = { 100, 1000 },
-				Increment = 10,
-				CurrentValue = getgenv().AutoFarmConfig.HeightOffset,
-				Callback = function(p14)
-					getgenv().AutoFarmConfig.HeightOffset = p14
-				end
-			}
-
-			v341.CreateSlider(v341, t11, "FloatHeight")
-
-			local t12 = {
-				Name = "Movement Speed",
-				Range = { 100, 1500 },
-				Increment = 10,
-				CurrentValue = getgenv().AutoFarmConfig.MoveSpeed,
-				Callback = function(p15)
-					getgenv().AutoFarmConfig.MoveSpeed = p15
-				end
-			}
-
-			v341.CreateSlider(v341, t12, "MoveSpeed")
-
-			local genv2 = getgenv()
-
-			v341.CreateSlider(v341, {
-				Name = "Attack Range",
-				Range = { 50, 500 },
-				Increment = 10,
-				CurrentValue = genv2.AutoFarmConfig.AttackRange,
-				Callback = function(p16)
-					getgenv().AutoFarmConfig.AttackRange = p16
-					getgenv().AutoTitanKillerRange = p16
-				end
-			}, "AttackRange")
-			v341:CreateSection("Automation Flow")
-			v341:CreateToggle({
-				Name = "Auto Retry",
-				CurrentValue = getgenv().AutoRetry,
-				Callback = function(p17)
-					getgenv().AutoRetry = p17
-				end
-			}, "AutoRetry")
-			v341.CreateToggle(v341, {
-				Name = "Auto Skip Cutscenes",
-				CurrentValue = getgenv().AutoSkip,
-				Callback = function(p18)
-					getgenv().AutoSkip = p18
-				end
-			}, "AutoSkip")
-			v341:CreateToggle({
-				Name = "Auto Open Chests",
-				CurrentValue = getgenv().AutoChest,
-				Callback = function(p19)
-					getgenv().AutoChest = p19
-				end
-			}, "AutoChest")
-			v341.CreateToggle(v341, {
-				Name = "Open Premium Chest",
-				CurrentValue = getgenv().OpenSecondChest,
-				Callback = function(p20)
-					getgenv().OpenSecondChest = p20
-				end
-			}, "OpenSecondChest")
-			v341.CreateToggle(v341, {
-				Name = "Auto Reload",
-				CurrentValue = getgenv().AutoReload,
-				Callback = function(p21)
-					getgenv().AutoReload = p21
-				end
-			}, "AutoReload")
-
-			local getgenv_ = getgenv
-
-			v341.CreateToggle(v341, {
-				Name = "Multi Hit",
-				CurrentValue = getgenv_().MultiHit,
-				Callback = function(p22)
-					getgenv().MultiHit = p22
-				end
-			}, "MultiHit")
-			v341:CreateSlider({
-				Name = "Multi Hit Count",
-				Range = { 1, 10 },
-				Increment = 1,
-				CurrentValue = getgenv().MultiHitCount,
-				Callback = function(p23)
-					getgenv().MultiHitCount = p23
-				end
-			}, "MultiHitCount")
-			v341:CreateSection("Safety / Flow")
-
-			local t13 = {
-				Name = "Auto Failsafe (15min)",
-				CurrentValue = getgenv().AutoFailsafe,
-				Callback = function(p24)
-					getgenv().AutoFailsafe = p24
-				end
-			}
-
-			v341.CreateToggle(v341, t13, "AutoFailsafe")
-			v341:CreateToggle({
-				Name = "Last Titan Wait",
-				CurrentValue = getgenv().LastTitanWait,
-				Callback = function(p25)
-					getgenv().LastTitanWait = p25
-				end
-			}, "LastTitanWait")
-			v341:CreateSlider({
-				Name = "Last Titan Wait Secs",
-				Range = { 10, 300 },
-				Increment = 5,
-				CurrentValue = getgenv().LastTitanWaitSecs,
-				Callback = function(p26)
-					getgenv().LastTitanWaitSecs = p26
-				end
-			}, "LastTitanWaitSecs")
-
-			local t14 = {
-				Name = "Die At Streak",
-				CurrentValue = getgenv().DieAtStreak,
-				Callback = function(p27)
-					getgenv().DieAtStreak = p27
-				end
-			}
-
-			v341.CreateToggle(v341, t14, "DieAtStreak")
-			v341:CreateSlider({
-				Name = "Die At Streak Count",
-				Range = { 1, 100 },
-				Increment = 1,
-				CurrentValue = getgenv().DieAtStreakCount,
-				Callback = function(p28)
-					getgenv().DieAtStreakCount = p28
-				end
-			}, "DieAtStreakCount")
-
-			local genv3 = getgenv()
-
-			v341.CreateToggle(v341, {
-				Name = "Solo Only",
-				CurrentValue = genv3.SoloOnly,
-				Callback = function(p29)
-					getgenv().SoloOnly = p29
-				end
-			}, "SoloOnly")
-			v341:CreateToggle({
-				Name = "Auto Return Lobby",
-				CurrentValue = getgenv().AutoReturnLobby,
-				Callback = function(p30)
-					getgenv().AutoReturnLobby = p30
-				end
-			}, "AutoReturnLobby")
-
-			local genv4 = getgenv()
-
-			v341.CreateSlider(v341, {
-				Name = "Return After N Games",
-				Range = { 1, 100 },
-				Increment = 1,
-				CurrentValue = genv4.ReturnAfterGames,
-				Callback = function(p31)
-					getgenv().ReturnAfterGames = p31
-				end
-			}, "ReturnAfterGames")
-			v341:CreateToggle({
-				Name = "Delete Map",
-				CurrentValue = getgenv().DeleteMap,
-				Callback = function(p32)
-					getgenv().DeleteMap = p32
-
-					if not p32 then
-						return
-					end
-
-					v292()
-				end
-			}, "DeleteMap")
-			v341.CreateToggle(v341, {
-				Name = "Anti Injury",
-				CurrentValue = getgenv().AntiInjury,
-				Callback = function(p33)
-					getgenv().AntiInjury = p33
-				end
-			}, "AntiInjury")
-			v342:CreateSection("Titan ESP")
-			v342:CreateToggle({
-				Name = "Titan ESP",
-				CurrentValue = getgenv().TitanESP,
-				Callback = function(p34)
-					getgenv().TitanESP = p34
-				end
-			}, "TitanESP")
-			v342:CreateToggle({
-				Name = "Show Dead Titans",
-				CurrentValue = getgenv().TitanESPShowDead,
-				Callback = function(p35)
-					getgenv().TitanESPShowDead = p35
-				end
-			}, "TitanESPShowDead")
-			v342:CreateToggle({
-				Name = "Show HP",
-				CurrentValue = getgenv().TitanESPHP,
-				Callback = function(p36)
-					getgenv().TitanESPHP = p36
-				end
-			}, "TitanESPHP")
-			v342:CreateSlider({
-				Name = "ESP Distance",
-				Range = { 100, 5000 },
-				Increment = 100,
-				CurrentValue = getgenv().TitanESPDistance,
-				Callback = function(p37)
-					getgenv().TitanESPDistance = p37
-				end
-			}, "TitanESPDistance")
-			v342:CreateSection("Hitbox Expander")
-			v342:CreateToggle({
-				Name = "Titan Hitbox Expander",
-				CurrentValue = getgenv().TitanHitbox,
-				Callback = function(p38)
-					getgenv().TitanHitbox = p38
-
-					local Titans = not p38 and workspace:FindFirstChild("Titans")
-
-					if not Titans then
-						return
-					end
-
-					for _, child in ipairs(Titans:GetChildren()) do
-						local Hitboxes = child:FindFirstChild("Hitboxes")
-
-						if Hitboxes then
-							Hitboxes = child.Hitboxes:FindFirstChild("Hit")
-						end
-
-						if Hitboxes then
-							local Nape = Hitboxes:FindFirstChild("Nape")
-
-							if Nape then
-								Nape.Size = Vector3.new(4, 4, 4)
-								Nape.Transparency = 1
-							end
-						end
-					end
-				end
-			}, "TitanHitbox")
-			v342.CreateSlider(v342, {
-				Name = "Hitbox Size",
-				Range = { 5, 150 },
-				Increment = 1,
-				CurrentValue = getgenv().TitanHitboxSize,
-				Callback = function(p39)
-					getgenv().TitanHitboxSize = p39
-				end
-			}, "TitanHitboxSize")
-
-			local floor = math.floor
-			local genv5 = getgenv()
-
-			v342.CreateSlider(v342, {
-				Name = "Hitbox Transparency",
-				Range = { 0, 10 },
-				Increment = 1,
-				CurrentValue = floor(genv5.TitanHitboxTransparency * 10),
-				Callback = function(p40)
-					getgenv().TitanHitboxTransparency = p40 / 10
-				end
-			}, "TitanHitboxTransparency")
-			v342:CreateSection("Auto Titan Killer")
-			v342:CreateToggle({
-				Name = "Auto Titan Killer",
-				CurrentValue = getgenv().AutoTitanKiller,
-				Callback = function(p41)
-					getgenv().AutoTitanKiller = p41
-				end
-			}, "AutoTitanKiller")
-
-			local t15 = {
-				Name = "Killer Range",
-				Range = { 50, 1000 },
-				Increment = 10,
-				CurrentValue = getgenv().AutoTitanKillerRange,
-				Callback = function(p42)
-					getgenv().AutoTitanKillerRange = p42
-				end
-			}
-
-			v342.CreateSlider(v342, t15, "AutoTitanKillerRange")
-			task.spawn(function()
-				while true do
-					repeat
-						task.wait(0.1)
-					until getgenv().TitanHitbox
-
-					pcall(function()
-						local Titans = workspace:FindFirstChild("Titans")
-
-						if Titans then
-							local TitanHitboxSize = getgenv().TitanHitboxSize or 35
-							local TitanHitboxTransparency = getgenv().TitanHitboxTransparency
-							local transparency = TitanHitboxTransparency == nil and 0.5 or TitanHitboxTransparency
-
-							for _, child in ipairs(Titans.GetChildren(Titans)) do
-								if not (child:GetAttribute("Killed") or child:GetAttribute("Dead")) then
-									local Hitboxes = child:FindFirstChild("Hitboxes")
-
-									if Hitboxes then
-										Hitboxes = child.Hitboxes:FindFirstChild("Hit")
-									end
-
-									if Hitboxes then
-										local Nape = Hitboxes:FindFirstChild("Nape")
-
-										if Nape then
-											Nape.Size = Vector3.new(TitanHitboxSize, TitanHitboxSize, TitanHitboxSize)
-											Nape.Transparency = transparency
-											Nape.CanCollide = false
-										end
-									end
-								end
-							end
-						end
-					end)
-				end
-			end)
-			v343:CreateSection("Waves Auto Farm")
-			v343.CreateToggle(v343, {
-				Name = "Auto Waves",
-				CurrentValue = getgenv().AutoWaves,
-				Callback = function(p43)
-					getgenv().AutoWaves = p43
-				end
-			}, "AutoWaves")
-
-			local genv6 = getgenv()
-
-			v343.CreateToggle(v343, {
-				Name = "Auto Upgrade (Waves)",
-				CurrentValue = genv6.AutoWavesUpgrade,
-				Callback = function(p44)
-					getgenv().AutoWavesUpgrade = p44
-				end
-			}, "AutoWavesUpgrade")
-
-			local t16 = {
-				Name = "Auto Start Waves",
-				CurrentValue = getgenv().AutoStartWaves,
-				Callback = function(p45)
-					getgenv().AutoStartWaves = p45
-				end
-			}
-
-			v343.CreateToggle(v343, t16, "AutoStartWaves")
-			v344:CreateSection("Auto Systems")
-			v344:CreateToggle({
-				Name = "Auto Upgrade",
-				CurrentValue = getgenv().AutoUpgrade,
-				Callback = function(p46)
-					getgenv().AutoUpgrade = p46
-				end
-			}, "AutoUpgrade")
-			v344:CreateToggle({
-				Name = "Auto Perk",
-				CurrentValue = getgenv().AutoPerk,
-				Callback = function(p47)
-					getgenv().AutoPerk = p47
-				end
-			}, "AutoPerk")
-			v344:CreateToggle({
-				Name = "Auto Skill Tree",
-				CurrentValue = getgenv().AutoSkillTree,
-				Callback = function(p48)
-					getgenv().AutoSkillTree = p48
-				end
-			}, "AutoSkillTree")
-			v344:CreateToggle({
-				Name = "Auto Slot",
-				CurrentValue = getgenv().AutoSlot,
-				Callback = function(p49)
-					getgenv().AutoSlot = p49
-				end
-			}, "AutoSlot")
-			v344:CreateToggle({
-				Name = "Auto Start",
-				CurrentValue = getgenv().AutoStart,
-				Callback = function(p50)
-					getgenv().AutoStart = p50
-				end
-			}, "AutoStart")
-
-			local genv7 = getgenv()
-
-			v344.CreateToggle(v344, {
-				Name = "Auto Prestige",
-				CurrentValue = genv7.AutoPrestige,
-				Callback = function(p51)
-					getgenv().AutoPrestige = p51
-				end
-			}, "AutoPrestige")
-			v344.CreateToggle(v344, {
-				Name = "Auto Claim Achievements",
-				CurrentValue = getgenv().AutoClaimAchievements,
-				Callback = function(p52)
-					getgenv().AutoClaimAchievements = p52
-				end
-			}, "AutoClaimAchievements")
-			v344:CreateToggle({
-				Name = "Auto Modifiers",
-				CurrentValue = getgenv().AutoModifiers,
-				Callback = function(p53)
-					getgenv().AutoModifiers = p53
-				end
-			}, "AutoModifiers")
-			v344:CreateToggle({
-				Name = "Auto Boost",
-				CurrentValue = getgenv().AutoBoost,
-				Callback = function(p54)
-					getgenv().AutoBoost = p54
-				end
-			}, "AutoBoost")
-			v345:CreateSection("Movement & Misc")
-
-			local genv8 = getgenv()
-
-			v345.CreateToggle(v345, {
-				Name = "Noclip",
-				CurrentValue = genv8.Noclip,
-				Callback = function(p55)
-					getgenv().Noclip = p55
-				end
-			}, "Noclip")
-
-			local t17 = {
-				Name = "Safe Farm",
-				CurrentValue = getgenv().SafeFarm,
-				Callback = function(p56)
-					getgenv().SafeFarm = p56
-				end
-			}
-
-			v345.CreateToggle(v345, t17, "SafeFarm")
-			v345.CreateToggle(v345, {
-				Name = "Auto Hooks",
-				CurrentValue = getgenv().AutoHooks,
-				Callback = function(p57)
-					getgenv().AutoHooks = p57
-				end
-			}, "AutoHooks")
-
-			local t18 = {
-				Name = "Double Jump Boost",
-				CurrentValue = getgenv().DoubleJumpBoost,
-				Callback = function(p58)
-					getgenv().DoubleJumpBoost = p58
-				end
-			}
-
-			v345.CreateToggle(v345, t18, "DoubleJumpBoost")
-			v345:CreateToggle({
-				Name = "Auto Escape",
-				CurrentValue = getgenv().AutoEscape,
-				Callback = function(p59)
-					getgenv().AutoEscape = p59
-				end
-			}, "AutoEscape")
-			v345:CreateSection("Wait Before Start")
-			v345:CreateToggle({
-				Name = "Wait Before Start",
-				CurrentValue = getgenv().WaitBeforeStart,
-				Callback = function(p60)
-					getgenv().WaitBeforeStart = p60
-				end
-			}, "WaitBeforeStart")
-			v345:CreateSlider({
-				Name = "Wait Seconds",
-				Range = { 0, 60 },
-				Increment = 1,
-				CurrentValue = getgenv().WaitBeforeStartSecs,
-				Callback = function(p61)
-					getgenv().WaitBeforeStartSecs = p61
-				end
-			}, "WaitBeforeStartSecs")
-			v345:CreateSection("Auto Execute")
-			v345.CreateToggle(v345, {
-				Name = "Auto Execute on Rejoin",
-				CurrentValue = getgenv().AutoExecute,
-				Callback = function(p62)
-					getgenv().AutoExecute = p62
-
-					local function v381()
-						writefile(v_u_4.value29, p62 and "1" or "0")
-					end
-
-					pcall(v381)
-
-					if p62 then
-						v31()
-					else
-						v_u_4.value34()
-					end
-				end
-			}, "AutoExecute")
-			v345.CreateInput(v345, {
-				Name = "Auto Execute Script",
-				PlaceholderText = "Paste script here...",
-				RemoveTextAfterFocusLost = false,
-				Callback = function(p63)
-					local function v382()
-						writefile(v_u_4.value28, p63)
-					end
-
-					pcall(v382)
-
-					if not getgenv().AutoExecute then
-						return
-					end
-
-					v31()
-				end
-			}, "AutoExecScript")
-			v346:CreateSection("Mastery Farm")
-			v346:CreateToggle({
-				Name = "Mastery Farm",
-				CurrentValue = getgenv().MasteryFarmConfig.Enabled,
-				Callback = function(p64)
-					getgenv().MasteryFarmConfig.Enabled = p64
-				end
-			}, "MasteryFarm")
-			v346:CreateDropdown({
-				Name = "Mastery Mode",
-				Options = { "Punching", "Skill Usage", "Both" },
-				CurrentOption = { getgenv().MasteryFarmConfig.Mode },
-				MultipleOptions = false,
-				Callback = function(p65)
-					getgenv().MasteryFarmConfig.Mode = v_u_4.value17(p65)
-				end
-			}, "MasteryMode")
-			v_u_4.value48 = {}
-			v_u_4.value49 = {}
-			v347:CreateSection("Auto Roll")
-			v347:CreateToggle({
-				Name = "Auto Roll",
-				CurrentValue = getgenv().AutoRoll,
-				Callback = function(p66)
-					getgenv().AutoRoll = p66
-
-					if not p66 then
-						return
-					end
-
-					task.spawn(function()
-						while getgenv().AutoRoll do
-							pcall(function()
-								local value44 = v_u_4.value44
-								local value48
-
-								if #v_u_4.value48 > 0 then
-									value48 = v_u_4.value48
-								else
-									value48 = false
-								end
-
-								value44(value48 or nil, #v_u_4.value49 > 0 and v_u_4.value49 or nil)
-							end)
-							task.wait(1)
-						end
-					end)
-				end
-			}, "AutoRoll")
-			v347.CreateDropdown(v347, {
-				Name = "Target Rarities",
-				Options = v3.value5,
-				CurrentOption = {},
-				MultipleOptions = true,
-				Callback = function(p67)
-					v_u_4.value49 = {}
-
-					if type(p67) ~= "table" then
-						return
-					end
-
-					for _, v in ipairs(p67) do
-						local value49 = v_u_4.value49
-						local lower = string.lower
-
-						table.insert(value49, lower(v))
-					end
-				end
-			}, "AutoRollRarities")
-			v347:CreateSection("Reward Webhooks")
-			v347:CreateToggle({
-				Name = "Reward Webhook",
-				CurrentValue = getgenv().RewardWebhook,
-				Callback = function(p68)
-					getgenv().RewardWebhook = p68
-				end
-			}, "RewardWebhook")
-			v347:CreateToggle({
-				Name = "Mythical Family Webhook",
-				CurrentValue = getgenv().MythicalFamilyWebhook,
-				Callback = function(p69)
-					getgenv().MythicalFamilyWebhook = p69
-				end
-			}, "MythicalFamilyWebhook")
-			v348:CreateSection("Utilities")
-			v348:CreateButton({
-				Name = "Teleport to Lobby",
-				Callback = function()
-					local function v389()
-						v_u_4.value8:InvokeServer("Functions", "Teleport", "Lobby")
-					end
-
-					pcall(v389)
-					task.wait(0.5)
-					v_u_4.value4:Teleport(v_u_4.value15, v_u_4.value2)
-				end
-			}, "TpLobby")
-			v348.CreateButton(v348, {
-				Name = "Rejoin Server",
-				Callback = function()
-					v_u_4.value4:Teleport(game.PlaceId, v_u_4.value2)
-				end
-			}, "Rejoin")
-			v348:CreateButton({
-				Name = "Reset Character",
-				Callback = function()
-					local Character = v_u_4.value2.Character
-
-					if Character then
-						Character = v_u_4.value2.Character:FindFirstChild("Humanoid")
-					end
-
-					if not Character then
-						return
-					end
-
-					Character.Health = 0
-				end
-			}, "ResetChar")
-			v_u_4.value50 = nil
-			v_u_4.value50 = {}
-
-			function v_u_4.value51()
-				v_u_4.value50 = {}
-
-				if not isfolder(v_u_4.value25) then
-					return v_u_4.value50
-				end
-
-				for _, v in ipairs(listfiles(v_u_4.value25)) do
-					local v393 = string.match(v, "([^/\\]+)%.json$")
-
-					if v393 then
-						local value50 = v_u_4.value50
-
-						table.insert(value50, v393)
-					end
-				end
-
-				return v_u_4.value50
-			end
-
-			v_u_4.value51()
-			v349:CreateSection("Config Management")
-			v349:CreateInput({
-				Name = "Config Name",
-				PlaceholderText = "Enter config name...",
-				RemoveTextAfterFocusLost = false,
-				Callback = function(p70)
-					getgenv()._configInputName = p70
-				end
-			}, "ConfigNameInput")
-			v349:CreateButton({
-				Name = "Save Config",
-				Callback = function()
-					local _configInputName = getgenv()._configInputName or "default"
-
-					if _configInputName == "" then
-						return
-					end
-
-					v_u_4.value45(_configInputName)
-					v_u_4.value51()
-
-					local v396 = "Config saved: " .. _configInputName
-					local s3 = "Astra Hub"
-
-					local function v398()
-						local t19 = {
-							Title = s3,
-							Icon = "notifications_active",
-							ImageSource = "Material",
-							Content = v396
-						}
-
-						v_u_4.value16:Notification(t19)
-					end
-
-					pcall(v398)
-				end
-			}, "SaveConfig")
-
-			local v400 = v_u_4.value51()
-			local value47 = v_u_4.value47
-
-			if value47 then
-				v3.value6 = v_u_4.value47
-				value47 = { v3.value6 }
-			end
-
-			v349:CreateDropdown({
-				Name = "Load Config",
-				Options = v400,
-				CurrentOption = value47 or {},
-				MultipleOptions = false,
-				Callback = function(p71)
-					local configLoaded = v_u_4.value17(p71)
-					local v403
-
-					if configLoaded then
-						v403 = configLoaded ~= ""
-					else
-						v403 = configLoaded
-					end
-
-					if not v403 then
-						return
-					end
-
-					v_u_4.value46(configLoaded)
-
-					local v404 = "Config loaded: " .. configLoaded
-					local s4 = "Astra Hub"
-
-					local function v406()
-						local t20 = {
-							Title = s4,
-							Icon = "notifications_active",
-							ImageSource = "Material",
-							Content = v404
-						}
-
-						v_u_4.value16:Notification(t20)
-					end
-
-					pcall(v406)
-				end
-			}, "LoadConfigDrop")
-			v349:CreateButton({
-				Name = "Set Auto Load",
-				Callback = function()
-					local _configInputName = getgenv()._configInputName or ""
-
-					if _configInputName == "" then
-						return
-					end
-
-					local function v409()
-						writefile(v_u_4.value26, _configInputName)
-					end
-
-					pcall(v409)
-
-					local v410 = "Auto load set: " .. _configInputName
-					local s5 = "Astra Hub"
-
-					local function v412()
-						local t21 = {
-							Title = s5,
-							Icon = "notifications_active",
-							ImageSource = "Material",
-							Content = v410
-						}
-
-						v_u_4.value16:Notification(t21)
-					end
-
-					pcall(v412)
-				end
-			}, "SetAutoLoad")
-			v349:CreateButton({
-				Name = "Clear Auto Load",
-				Callback = function()
-					local function v414()
-						if not isfile(v_u_4.value26) then
-							return
-						end
-
-						delfile(v_u_4.value26)
-					end
-
-					pcall(v414)
-
-					local s6 = "Astra Hub"
-					local s7 = "Auto load cleared"
-
-					local function v417()
-						local t22 = {
-							Title = s6,
-							Icon = "notifications_active",
-							ImageSource = "Material",
-							Content = s7
-						}
-
-						v_u_4.value16:Notification(t22)
-					end
-
-					pcall(v417)
-				end
-			}, "ClearAutoLoad")
-			v350:CreateSection("Session Stats")
-			v_u_4.value52 = v350:CreateLabel("Loading stats...")
-			task.spawn(function()
-				while true do
-					task.wait(1)
-
-					local function v419()
-						if not v_u_4.value52 then
-							return
-						end
-
-						local totalGold = v_u_4.value35.totalGold
-						local totalGems = v_u_4.value35.totalGems
-						local totalXP = v_u_4.value35.totalXP
-						local gamesPlayed = v_u_4.value35.gamesPlayed
-						local v424 = v_u_4.value36()
-
-						v_u_4.value52:Set(string.format("Time: %s  |  Games: %d  |  Gold: %d  |  Gems: %d  |  XP: %d", v424, gamesPlayed, totalGold, totalGems, totalXP))
-					end
-
-					pcall(v419)
-				end
-			end)
-			v350.CreateButton(v350, {
-				Name = "Reset Session Stats",
-				Callback = function()
-					v_u_4.value35 = {
-						startTime = os.time(),
-						gamesPlayed = 0,
-						totalGold = 0,
-						totalGems = 0,
-						totalXP = 0,
-						crashes = 0
-					}
-
-					local function v425()
-						local writefile_ = writefile
-						local v427 = v_u_4.value24 .. "/s_games.txt"
-						local gamesPlayed = v_u_4.value35.gamesPlayed
-
-						writefile_(v427, (tostring(gamesPlayed)))
-
-						local writefile_2 = writefile
-						local v430 = v_u_4.value24 .. "/s_gold.txt"
-						local totalGold = v_u_4.value35.totalGold
-
-						writefile_2(v430, (tostring(totalGold)))
-
-						local writefile_3 = writefile
-						local v433 = v_u_4.value24 .. "/s_gems.txt"
-						local totalGems = v_u_4.value35.totalGems
-
-						writefile_3(v433, (tostring(totalGems)))
-
-						local writefile_4 = writefile
-						local v436 = v_u_4.value24 .. "/s_xp.txt"
-						local totalXP = v_u_4.value35.totalXP
-
-						writefile_4(v436, (tostring(totalXP)))
-
-						local writefile_5 = writefile
-						local v439 = v_u_4.value24 .. "/s_elapsed.txt"
-						local v440 = os.time() - v_u_4.value35.startTime
-
-						writefile_5(v439, (tostring(v440)))
-					end
-
-					pcall(v425)
-
-					local s8 = "Astra Hub"
-					local s9 = "Session stats reset"
-
-					local function v443()
-						local t23 = {
-							Title = s8,
-							Icon = "notifications_active",
-							ImageSource = "Material",
-							Content = s9
-						}
-
-						v_u_4.value16:Notification(t23)
-					end
-
-					pcall(v443)
-				end
-			}, "ResetStats")
-
-			return
-		until true
-	end
+local Players = game:GetService("Players")
+local HttpService = game:GetService("HttpService")
+
+local LOCAL_PLAYER = Players.LocalPlayer
+
+local VERIFY_URL = "https://smoothhubgetkey.smoothhubthailand.workers.dev/verify"
+local SCRIPT_URL = "https://smoothhubgetkey.smoothhubthailand.workers.dev/script"
+
+local KEY_FILE = "SmoothHub_key.txt"
+local VERIFIED_FILE = "SmoothHub_verified.txt"
+local SCRIPT_CACHE_FILE = "SmoothHub_AOTR_cache_v2.lua"
+local SCRIPT_CACHE_TIME_FILE = "SmoothHub_AOTR_cache_v2.lua.t"
+
+local VERIFIED_CACHE_SECONDS = 23 * 60 * 60
+local SCRIPT_REFRESH_SECONDS = 10 * 60
+local MIN_SCRIPT_SIZE = 100000
+
+local KeySystem = {
+    currentKey = nil,
+    currentScript = nil,
+}
+
+-- Wait for Roblox to finish loading and for the local player to exist.
+local function waitForGame(timeout, waitForCharacter)
+    timeout = timeout or 30
+    local startedAt = os.clock()
+
+    while not game:IsLoaded() and os.clock() - startedAt < timeout do
+        task.wait(0.1)
+    end
+
+    while not Players.LocalPlayer and os.clock() - startedAt < timeout do
+        task.wait(0.1)
+    end
+
+    local player = Players.LocalPlayer
+    if not player then
+        return false
+    end
+
+    while not player:FindFirstChildOfClass("PlayerGui")
+        and os.clock() - startedAt < timeout do
+        task.wait(0.1)
+    end
+
+    if waitForCharacter then
+        local characterStartedAt = os.clock()
+        while not player.Character and os.clock() - characterStartedAt < 4 do
+            task.wait(0.1)
+        end
+    end
+
+    return true
 end
+
+-- Get the executor/Roblox identifier used by the original key server.
+local function getHardwareId()
+    local identifier
+
+    pcall(function()
+        identifier = game:GetService("RbxAnalyticsService"):GetClientId()
+    end)
+
+    if type(identifier) ~= "string" or #identifier < 8 then
+        pcall(function()
+            local getHwid = gethwid or get_hwid
+            getHwid = getHwid or (syn and syn.gethwid)
+
+            if getHwid then
+                identifier = getHwid()
+            end
+        end)
+    end
+
+    identifier = tostring(identifier or ""):gsub("[^%w_-]", "")
+    if #identifier < 8 then
+        identifier = "unknown000"
+    end
+
+    return identifier:sub(1, 80)
+end
+
+-- HTTP GET with support for common executor request APIs.
+local function httpGet(url)
+    local ok, body = pcall(function()
+        return game:HttpGet(url)
+    end)
+
+    if ok and type(body) == "string" and body ~= "" then
+        return true, body
+    end
+
+    local requestFunction = syn and syn.request
+        or http_request
+        or request
+        or (http and http.request)
+        or (fluxus and fluxus.request)
+
+    if requestFunction then
+        local requestOk, response = pcall(requestFunction, {
+            Url = url,
+            Method = "GET",
+        })
+
+        if requestOk and type(response) == "table" then
+            local status = response.StatusCode or response.Status or 200
+
+            if type(response.Body) == "string"
+                and response.Body ~= ""
+                and (status == 200 or status == nil) then
+                return true, response.Body
+            end
+
+            return false, "HTTP " .. tostring(status)
+        end
+    end
+
+    return false, tostring(body)
+end
+
+-- Store the key in the executor environment, as the original did.
+local function exposeKeyToEnvironment(key)
+    pcall(function()
+        if getgenv then
+            getgenv().script_key = key
+        end
+    end)
+
+    pcall(function()
+        _G.script_key = key
+    end)
+
+    pcall(function()
+        shared.script_key = key
+    end)
+end
+
+local function buildRequestUrl(baseUrl, key)
+    local userId = tostring(LOCAL_PLAYER.UserId)
+    local hwid = getHardwareId()
+
+    return baseUrl
+        .. "?key=" .. HttpService:UrlEncode(key)
+        .. "&uid=" .. HttpService:UrlEncode(userId)
+        .. "&hwid=" .. HttpService:UrlEncode(hwid)
+end
+
+-- Verify one key against the remote service.
+function KeySystem.verify(key)
+    key = tostring(key or ""):gsub("%s", "")
+    if key == "" then
+        return false, "empty key"
+    end
+
+    if not LOCAL_PLAYER then
+        return false, "local player unavailable"
+    end
+
+    KeySystem.currentKey = key
+
+    local url = buildRequestUrl(VERIFY_URL, key)
+    local lastReason = "denied"
+
+    for attempt = 1, 3 do
+        local requestOk, responseBody = httpGet(url)
+        if not requestOk then
+            return false, "server error"
+        end
+
+        local decodeOk, response = pcall(
+            HttpService.JSONDecode,
+            HttpService,
+            responseBody
+        )
+
+        if not decodeOk or type(response) ~= "table" then
+            return false, "server error"
+        end
+
+        if response.ok == true then
+            exposeKeyToEnvironment(key)
+            return true
+        end
+
+        lastReason = tostring(response.reason or "denied")
+
+        if not lastReason:find("server busy", 1, true) or attempt == 3 then
+            return false, lastReason
+        end
+
+        task.wait(0.5 + math.random() * 0.7)
+    end
+
+    return false, lastReason
+end
+
+-- Retry verification when the server reports temporary congestion.
+function KeySystem.verifyWithRetries(key, attempts)
+    attempts = attempts or 2
+    local lastReason = "server error"
+
+    for attempt = 1, attempts do
+        local valid, reason = KeySystem.verify(key)
+        if valid then
+            return true
+        end
+
+        lastReason = reason
+        if reason ~= "server error"
+            and not tostring(reason):find("server busy", 1, true) then
+            return false, reason
+        end
+
+        if attempt < attempts then
+            task.wait(1 + attempt)
+        end
+    end
+
+    return false, lastReason
+end
+
+-- Check whether a downloaded response looks like an HTML error page.
+local function describeWebError(body)
+    local title = body:match("<[Tt][Ii][Tt][Ll][Ee][^>]*>%s*(.-)%s*</[Tt][Ii][Tt][Ll][Ee]>")
+    local errorCode = body:match("[Ee]rror code:?%s*(%d+)")
+        or body:match("[Ee]rror%s+(1%d%d%d)")
+
+    local details = {}
+    if errorCode then
+        table.insert(details, "code " .. errorCode)
+    end
+    if title and title ~= "" then
+        table.insert(details, title:sub(1, 40))
+    end
+
+    return #details > 0 and (" [" .. table.concat(details, " | ") .. "]") or ""
+end
+
+-- Download and compile the main script, but do not execute it yet.
+local function downloadMainScript()
+    local lastError = "unknown"
+
+    for attempt = 1, 3 do
+        local url = buildRequestUrl(SCRIPT_URL, KeySystem.currentKey)
+
+        if attempt > 1 then
+            url = url .. "&_=" .. tostring(os.time()) .. tostring(attempt)
+        end
+
+        local requestOk, responseBody = httpGet(url)
+        if not requestOk then
+            lastError = "download failed: " .. tostring(responseBody)
+
+            if tostring(responseBody):find("404", 1, true) then
+                return nil, lastError
+            end
+
+            task.wait(1.5 * attempt)
+            continue
+        end
+
+        responseBody = tostring(responseBody)
+        local preview = responseBody:sub(1, 400):lower()
+
+        if preview:find("<!doctype", 1, true)
+            or preview:find("<html", 1, true) then
+            return nil, "script URL returned a web page"
+                .. describeWebError(responseBody)
+        end
+
+        if preview:find("not found", 1, true) and #responseBody < 300 then
+            return nil, "script URL returned 'Not found'"
+        end
+
+        if #responseBody < MIN_SCRIPT_SIZE then
+            lastError = "downloaded script is too short (" .. #responseBody .. " bytes)"
+            task.wait(2 * attempt)
+            continue
+        end
+
+        local compiler = loadstring or load
+        if not compiler then
+            return nil, "executor does not provide loadstring/load"
+        end
+
+        local compiledFunction = compiler(responseBody)
+        if type(compiledFunction) == "function" then
+            return responseBody
+        end
+
+        lastError = "compile error"
+        task.wait(2 * attempt)
+    end
+
+    return nil, lastError
+end
+
+local function readCachedScript()
+    local cachedScript
+
+    pcall(function()
+        if isfile and isfile(SCRIPT_CACHE_FILE) then
+            cachedScript = readfile(SCRIPT_CACHE_FILE)
+        end
+    end)
+
+    if type(cachedScript) == "string" and #cachedScript >= MIN_SCRIPT_SIZE then
+        return cachedScript
+    end
+
+    pcall(function()
+        if delfile and isfile and isfile(SCRIPT_CACHE_FILE) then
+            delfile(SCRIPT_CACHE_FILE)
+        end
+    end)
+
+    return nil
+end
+
+local function writeCachedScript(scriptSource)
+    if type(scriptSource) ~= "string" or #scriptSource < MIN_SCRIPT_SIZE then
+        return
+    end
+
+    pcall(function()
+        if writefile then
+            writefile(SCRIPT_CACHE_FILE, scriptSource)
+        end
+    end)
+end
+
+local function getCacheTimestamp()
+    local timestamp = 0
+
+    pcall(function()
+        if isfile and isfile(SCRIPT_CACHE_TIME_FILE) then
+            timestamp = tonumber(readfile(SCRIPT_CACHE_TIME_FILE)) or 0
+        end
+    end)
+
+    return timestamp
+end
+
+-- Fetch a fresh script; use a previously cached copy only if fetching fails.
+function KeySystem.getMainScript()
+    if not KeySystem.currentKey then
+        return nil, "verify a key first"
+    end
+
+    local cachedScript = readCachedScript()
+    local compiler = loadstring or load
+
+    if cachedScript and compiler then
+        local cachedFunction = compiler(cachedScript)
+
+        if type(cachedFunction) == "function" then
+            if os.time() - getCacheTimestamp() >= SCRIPT_REFRESH_SECONDS then
+                pcall(function()
+                    if writefile then
+                        writefile(SCRIPT_CACHE_TIME_FILE, tostring(os.time()))
+                    end
+                end)
+
+                task.spawn(function()
+                    local freshScript = downloadMainScript()
+                    if freshScript and freshScript ~= cachedScript then
+                        writeCachedScript(freshScript)
+                    end
+                end)
+            end
+
+            return cachedFunction
+        end
+    end
+
+    local downloadedScript, downloadError = downloadMainScript()
+    if downloadedScript then
+        writeCachedScript(downloadedScript)
+        return compiler(downloadedScript)
+    end
+
+    if cachedScript and compiler then
+        local cachedFunction = compiler(cachedScript)
+        if type(cachedFunction) == "function" then
+            warn("[Smooth Hub] Server unreachable; using cached script.")
+            return cachedFunction
+        end
+    end
+
+    return nil, downloadError
+end
+
+-- Execute the downloaded/cached main script.
+-- Review the remote script before calling this function.
+function KeySystem.loadMainScript()
+    local scriptFunction, loadError = KeySystem.getMainScript()
+    if not scriptFunction then
+        return false, loadError
+    end
+
+    waitForGame(30, true)
+
+    local ok, result = pcall(scriptFunction)
+    if not ok and tostring(result):find("attempt to index nil", 1, true) then
+        waitForGame(30, true)
+        task.wait(1.5)
+        ok, result = pcall(scriptFunction)
+    end
+
+    if not ok then
+        return false, tostring(result)
+    end
+
+    return true
+end
+
+-- Save/load the key. These files contain the key in plaintext.
+function KeySystem.saveKey(key)
+    key = tostring(key or ""):gsub("%s", "")
+    if key == "" then
+        return false
+    end
+
+    KeySystem.currentKey = key
+    exposeKeyToEnvironment(key)
+
+    local ok = pcall(function()
+        if writefile then
+            writefile(KEY_FILE, key)
+            writefile(VERIFIED_FILE, tostring(os.time()) .. "|" .. key)
+        end
+    end)
+
+    return ok
+end
+
+function KeySystem.readSavedKey()
+    local savedKey
+
+    pcall(function()
+        if isfile and isfile(KEY_FILE) then
+            savedKey = tostring(readfile(KEY_FILE)):gsub("%s", "")
+        end
+    end)
+
+    return savedKey
+end
+
+function KeySystem.savedVerificationAge(key)
+    local age
+
+    pcall(function()
+        if not isfile or not isfile(VERIFIED_FILE) then
+            return
+        end
+
+        local timestamp, storedKey =
+            tostring(readfile(VERIFIED_FILE)):match("^(%d+)|(.+)$")
+
+        timestamp = tonumber(timestamp)
+        if timestamp and storedKey == key then
+            age = os.time() - timestamp
+        end
+    end)
+
+    return age
+end
+
+function KeySystem.isSavedVerificationFresh(key)
+    local age = KeySystem.savedVerificationAge(key)
+    return age ~= nil and age >= 0 and age < VERIFIED_CACHE_SECONDS
+end
+
+function KeySystem.clearSavedVerification()
+    pcall(function()
+        if writefile then
+            writefile(VERIFIED_FILE, "")
+        end
+    end)
+end
+
+-- Typical integration:
+--[[
+local key = KeySystem.readSavedKey()
+
+if key then
+    local valid = KeySystem.verifyWithRetries(key, 2)
+    if valid then
+        local loaded, err = KeySystem.loadMainScript()
+        if not loaded then
+            warn("[Smooth Hub] " .. tostring(err))
+        end
+    end
+end
+
+-- For a Submit button:
+local valid, reason = KeySystem.verifyWithRetries(keyFromTextBox, 2)
+if valid then
+    KeySystem.saveKey(keyFromTextBox)
+    local loaded, err = KeySystem.loadMainScript()
+    if not loaded then
+        warn("[Smooth Hub] " .. tostring(err))
+    end
+else
+    warn("Key rejected: " .. tostring(reason))
+end
+]]
+
+return KeySystem
